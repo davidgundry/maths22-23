@@ -5,7 +5,7 @@ Course content for the Mathematics and Problem Solving module 2021-22 at York St
 ## Time
 
 Tuesday 9:00-13:00
-        13:00-18:00
+        14:00-18:00
 
 5 October - 7 December (16 November reading week)
 
