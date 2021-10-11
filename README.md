@@ -25,6 +25,10 @@ Actual room because that isn't ready
 
 Generate attendance code at https://yorkconnectlite-test.azurewebsites.net/
 
+## Assessment
+
+Deadline week beginning 24 Jan (Week 14)
+
 ## Recording Lectures
 
 Use Microsoft Teams
