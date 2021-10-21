@@ -243,8 +243,8 @@ VCKIVHH GSV UFMXGRLM FHVW GL VMXIBKG GSRH GVCG FHRMT Z ULINFOZ
         \item $00010100 - 10101000$
         \item $1101 \times 1010$
         \item $11101001 \times 00101001$
-        \item $01001011 \div 00010111$ (report both dividend and quotient)
-        \item $1011\div 0101$ (report both dividend and quotient)
+        \item $01001011 \div 00010111$ (report both quotient and remainder)
+        \item $1011\div 0101$ (report both quotient and remainder)
     \end{enumerate}
 
 \subsection{}
@@ -293,7 +293,7 @@ VCKIVHH GSV UFMXGRLM FHVW GL VMXIBKG GSRH GVCG FHRMT Z ULINFOZ
 
 \subsection{}
 
-    A 2341 digit number in base 536 can store how many different values?
+    A 23 digit number in base 536 can store how many different values?
 
 \subsection{}
 
@@ -328,7 +328,6 @@ VCKIVHH GSV UFMXGRLM FHVW GL VMXIBKG GSRH GVCG FHRMT Z ULINFOZ
     A geometric sequence has 10 terms and a common ratio of $\frac{1}{10}$ and it's final term is ${10^{-8}}$.
 
     \begin{enumerate}
-        \item Give an explicit formula to define this sequence
         \item Is this sequence increasing, decreasing, monotonic, and/or bounded? (List all that apply)
         \item Is -10 a lower bound for this sequence?
         \item Is 1 an upper bound for this sequence?
@@ -347,18 +346,6 @@ VCKIVHH GSV UFMXGRLM FHVW GL VMXIBKG GSRH GVCG FHRMT Z ULINFOZ
 
 \subsection{}
 
-    Simplify the following summations
-
-    \begin{enumerate}
-        \item $ \sum_{i=1}^{n} c $
-        \item $ \sum_{i=1}^{n} ( i + 2 ) $
-        \item $ \sum_{i=1}^{n} ( i^2 + 3i ) $
-        \item $ \sum_{i=1}^{n} \sum_{j=1}^{i} j $
-        \item $ \sum_{i=1}^{n} A_i $ where $ A_n = A_{n-1} + \frac{1}{2} $ and $ A_1 = \frac{1}{2} $
-    \end{enumerate}
-
-\subsection{}
-
     Solve the following products
 
     \begin{enumerate}
@@ -369,22 +356,26 @@ VCKIVHH GSV UFMXGRLM FHVW GL VMXIBKG GSRH GVCG FHRMT Z ULINFOZ
 
 \subsection{}
 
-    Simplify the following products
+    Consider the sequence $S = \{ \frac{n}{n+1} \}^\infty_{n=1} $
 
     \begin{enumerate}
-        \item $ \prod_{k=1}^n c $
-        \item $ \prod_{k=1}^n ( 3c + 5) $
+        \item Give a lower bound for this sequence that is also in this sequence.
+        \item What is a number that this sequence will approach, but never quite reach?
+        \item Is this sequence increasing, decreasing, monotonic, and/or bounded? (List all that apply)
     \end{enumerate}
 
 \subsection{}
 
-    Consider the sequence $S = \{ \frac{n}{n+1} \}^\infty_{n=1} $
+Simplify the following summations
 
-    \begin{enumerate}
-        \item Give a lower bound $m$ that also in this sequence.
-        \item What is a number that this sequence will approach, but never quite reach?
-        \item Is this sequence increasing, decreasing, monotonic, and/or bounded? (List all that apply)
-    \end{enumerate}
+\begin{enumerate}
+    \item $ \sum_{i=1}^{n} c $
+    \item $ \sum_{i=1}^{n} ( i + 2 ) $
+    \item $ \sum_{i=1}^{n} ( i^2 + 3i ) $
+    \item $ \sum_{i=1}^{n} \sum_{j=1}^{i} j $
+    \item $ \sum_{i=1}^{n} A_i $ where $ A_n = A_{n-1} + \frac{1}{2} $ and $ A_1 = \frac{1}{2} $
+\end{enumerate}
+
 
 \clearpage
 \section{Propositional Logic}
@@ -1038,8 +1029,32 @@ You take 5 friends to two ice cream shops. You get them to rate each shop out of
 
 What is the t statistic for the hypothesis that people prefer Shop B to Shop A?
 
-
 \iffalse
+\clearpage
+
+$$ \sum_{i=1}^{n} i^2 = \frac{n(n+1)(2n + 1)}{6} $$
+
+$$ \sum_{i=1}^{n} i $$
+
+$$ \sum_{i=1}^{n} i = \frac{n(n + 1)}{2} $$
+
+$$ \sum_{i=1}^{n} A_i = \frac{n(A_1 + A_n)}{2} $$
+
+$$ \sum_{i=1}^{n} G_i = \frac{G_1(r^n - 1)}{r -1} $$
+
+
+$$ A = \{ 10, 20, 30, 40 \}$$
+$$ \sum_{i=1}^{4} A_i = 100$$
+$$ \sum_i A_i = 100$$
+$$ \sum A = 100$$
+
+$$ \sum_{i=1}^{100} i = \frac{100(1 + 100)}{2} = 5050$$
+
+
+
+
+
+
 $$ \sum_{i=1}^{n} ci = c \sum_{i=1}^{n} i $$
 
 $$ \sum_{i=1}^{n} (a + b) = \sum_{i=1}^{n} a + \sum_{i=1}^{n} b $$
@@ -1047,9 +1062,13 @@ $$ \sum_{i=1}^{n} (a + b) = \sum_{i=1}^{n} a + \sum_{i=1}^{n} b $$
 \begin{enumerate}
     \item $ \sum_{i=1}^{n} 2 $
 
-    \item $ \sum_{i=1}^{i} a $
+    \item $ \sum_{i=1}^{n} a $
 
     \item $ \sum_{i=4}^{n} 10 $
+
+    \item $ \sum_{i=0}^{n-1} (a + 4) $
+
+    \item $ \sum_{i=-5}^{n+3} 13k^n$
 \end{enumerate}
 
 \begin{enumerate}
@@ -1085,9 +1104,9 @@ $$ \prod_{k=1}^{n} c = c^n $$
 \begin{enumerate}
     \item $ \sum_{i=1}^{n} 3ci $
 
-    \item $ \sum_{i=1}^{n} 3i + 4 $
+    \item $ \sum_{i=1}^{n} (3i + 4) $
 
-    \item $ \sum_{i=1}^{n} 2i^2 + 3i $
+    \item $ \sum_{i=1}^{n} (2i^2 + 3i) $
 \end{enumerate}
 
 $$ \{a_1, a_2, \cdots, a_n, a_{n+1}, \cdots \} $$
@@ -1099,6 +1118,8 @@ $$ \{ a_n \}_{n=1}^{\infty} $$
 \begin{enumerate}
     \item $ \{ n^2 + 3 \}_{n=1}^{\infty} $
     \item $ \{ \frac{n}{n+1} \}_{n=1}^{\infty} $
+    \item $ \{ n + 3 \}_{n=4}^{17} $
+    \item $ \{ k + \frac{n}{2} \}_{n=k}^{k+4} $
 \end{enumerate}
 \fi
 
