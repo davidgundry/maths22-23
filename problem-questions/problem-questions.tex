@@ -388,7 +388,19 @@ When $p$ is true and $q$ is false, state whether the following statements are tr
     \item $\neg \neg \neg q$
     \item $(p \wedge q) \vee p$
     \item $(p \vee \neg q) \implies p$
-    \item $q \implies (p \Leftrightarrow q)$
+    \item $q \implies (p \Longleftrightarrow q)$
+    \item $p \wedge q \Longleftrightarrow \neg p \vee q$
+\end{enumerate}
+
+\subsection{}
+
+Let $p$ be a true proposition and $q$ be any proposition. Which of the following are true, and which of the following are false? (others might be true or false)
+
+\begin{enumerate}
+    \item $p \implies q$
+    \item $q \implies p$
+    \item $\neg q \implies p$
+    \item $\neg p \implies q$
 \end{enumerate}
 
 \subsection{}
@@ -417,6 +429,18 @@ For the following, state whether they are tautologies, contraditions, or conting
     \item $p \implies (\neg p \vee p)$
     \item $p \vee q \implies p \wedge q$
     \item $\neg p \vee \neg\neg p$
+    \item $p \vee \neg (p \vee \neg p) $
+\end{enumerate}
+
+
+\subsection{}
+
+Do the following properties hold of implication? You may wish to use either a truth table or Equational Reasoning to arrive at your answer.
+
+\begin{enumerate}
+    \item Implication distributes over conjunction $$ (p \implies (q \wedge r)) \Longleftrightarrow (p \implies q) \wedge (p \implies r) $$
+    \item Implication distributes over disjunction $$ (p \implies (q \vee r)) \Longleftrightarrow (p \implies q) \vee (p \implies r) $$
+    \item Implication distributes over implication $$ (p \implies (q \implies r)) \Leftrightarrow (p \implies q) \implies (p \implies r) $$
 \end{enumerate}
 
 \subsection{}
@@ -428,37 +452,8 @@ Prove the following by Equational Reasoning. Format your proof as in the lecture
     \item $\neg p \wedge \text{true} \Longleftrightarrow \neg p$
 \end{enumerate}
 
-For this, use only the laws given in the lecture slides reproduced below:
+For this, use only the laws given in the lecture slides and the handout.
 
-\begin{itemize}
-    \item Law 1.1: $(\neg\text{true}) \Longleftrightarrow \text{false}$
-    \item Law 1.2: $(\neg\neg p) \Longleftrightarrow p$
-
-    \item Law 2.1: $(p \wedge p) \Longleftrightarrow p$
-    \item Law 2.2: $(p \wedge \text{true}) \Longleftrightarrow p$
-    \item Law 2.3: $(p \wedge \text{false}) \Longleftrightarrow \text{false}$
-    \item Law 2.4: $(p \wedge (\neg p)) \Longleftrightarrow \text{false}$
-    \item Law 2.5: $(p \wedge q) \Longleftrightarrow(p \wedge q)$
-    \item Law 2.6: $(p \wedge q ) \wedge r \Longleftrightarrow p \wedge (q \wedge r)$
-
-    \item Law 3.1: $\neg(p \wedge q) \Longleftrightarrow ((\neg p) \vee (\neg q))$ \\
-                        $\neg(p \vee q) \Longleftrightarrow ((\neg p) \wedge (\neg q))$
-    \item Law 3.2: $(p \vee p) \Longleftrightarrow p$
-    \item Law 3.3: $(p \vee \text{false}) \Longleftrightarrow p$
-    \item Law 3.4: $(p \vee \text{true}) \Longleftrightarrow \text{true}$
-    \item Law 3.5: $p \vee (q \vee r) \Longleftrightarrow (p \vee q) \vee r$
-    \item Law 3.6: $ p \vee q \Longleftrightarrow q \vee p$
-    \item Law 3.7: $((\neg p) \vee p) \Longleftrightarrow \text{true}$
-    \item Law 3.8: $p \vee (q \wedge r) \Longleftrightarrow (p \vee q) \wedge (p \vee r)$
-    \item Law 3.9: $p \wedge (q \vee r) \Longleftrightarrow (p \wedge q) \vee (p \wedge r)$
-    
-    \item Law 4.1: $ (p \implies q) \Longleftrightarrow ( \neg p \vee q)$
-
-    \item Law 5.1: $((p \Longleftrightarrow q) \Longleftrightarrow r) \Longleftrightarrow (p \Longleftrightarrow (q \Longleftrightarrow r))$
-    \item Law 5.2: $(p \Longleftrightarrow q) \Longleftrightarrow (q \Longleftrightarrow p)$
-    \item Law 5.3: $(p \Longleftrightarrow p) \Longleftrightarrow \text{true}$
-    \item Law 5.4: $(p \Longleftrightarrow (\neg p)) \Longleftrightarrow \text{false}$
-\end{itemize}
 
 \clearpage
 \section{Set Theory}

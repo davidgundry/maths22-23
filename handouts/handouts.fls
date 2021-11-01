@@ -1,8 +1,8 @@
-PWD /home/odin/teaching/maths 21-22/content/handouts
+PWD /home/odin/teaching/maths 21-22/handouts
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /home/odin/.texlive/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /home/odin/teaching/maths 21-22/content/handouts/handouts.tex
-OUTPUT /home/odin/teaching/maths 21-22/content/handouts/handouts.log
+INPUT /home/odin/teaching/maths 21-22/handouts/handouts.tex
+OUTPUT /home/odin/teaching/maths 21-22/handouts/handouts.log
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
@@ -418,10 +418,10 @@ INPUT /usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /home/odin/teaching/maths 21-22/content/handouts/handouts.aux
-INPUT /home/odin/teaching/maths 21-22/content/handouts/handouts.aux
-INPUT /home/odin/teaching/maths 21-22/content/handouts/handouts.aux
-OUTPUT /home/odin/teaching/maths 21-22/content/handouts/handouts.aux
+INPUT /home/odin/teaching/maths 21-22/handouts/handouts.aux
+INPUT /home/odin/teaching/maths 21-22/handouts/handouts.aux
+INPUT /home/odin/teaching/maths 21-22/handouts/handouts.aux
+OUTPUT /home/odin/teaching/maths 21-22/handouts/handouts.aux
 INPUT /usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -463,9 +463,9 @@ INPUT /usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-OUTPUT /home/odin/teaching/maths 21-22/content/handouts/handouts.pdf
+OUTPUT /home/odin/teaching/maths 21-22/handouts/handouts.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT /home/odin/teaching/maths 21-22/content/handouts/handouts.aux
+INPUT /home/odin/teaching/maths 21-22/handouts/handouts.aux
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb

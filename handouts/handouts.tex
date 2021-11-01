@@ -19,6 +19,8 @@
 
 \section{Propositional Logic}
 
+The following laws of propositional logic are compiled and numbered for the benefit of this course. This is not an exhaustive list.
+
 \subsection{Laws of Negation}
 
 \paragraph{Law 1.1} not false is true and not true is false
@@ -37,15 +39,15 @@ $$ ( \neg  \neg p)  \iff  p $$
 
 $$ (p  \wedge  p)  \iff  p $$
 
-\paragraph{Law 2.2}
+\paragraph{Law 2.2} a proposition conjoined with true is equivalent to itself
 
 $$ (p  \wedge  \text{true})  \iff  p $$
 
-\paragraph{Law 2.3} a proposition conjoined with false will always resolve to false
+\paragraph{Law 2.3} a proposition conjoined with false is equivalent to false
 
 $$ (p  \wedge  \text{false})  \iff  \text{false} $$
 
-\paragraph{Law 2.4} a proposition conjoined with its own negation will always resolve to false
+\paragraph{Law 2.4} a proposition conjoined with its own negation is equivalent to false
 
 $$ (p  \wedge  ( \neg p))  \iff  \text{false} $$
 
@@ -59,7 +61,7 @@ $$ (p  \wedge  q)  \wedge  r  \iff  p  \wedge  (q  \wedge  r) $$
 
 \subsection{Laws of Disjunction}
 
-Law 3.1 de Morgan’s Laws
+\paragraph{Law 3.1} de Morgan’s Laws
 
 $$ \neg (p  \wedge  q)  \iff  (( \neg p)  \vee  ( \neg q)) $$
 
@@ -69,13 +71,11 @@ $$ \neg (p  \vee  q)  \iff  (( \neg p)  \wedge  ( \neg q)) $$
 
 $$ (p  \vee  p)  \iff  p $$
 
-\paragraph{Law 3.3} combination via disjunction or a proposition with false is logically equivalent o the value of
-
-the proposition
+\paragraph{Law 3.3} a proposition disjoined with false is equivalent to itself
 
 $$ (p  \vee  \text{false})  \iff  p $$
 
-\paragraph{Law 3.4} a proposition combined via disjunction with true will always resolve to true
+\paragraph{Law 3.4} a proposition combined via disjunction with true is equivalent to true
 
 $$ (p  \vee  \text{true})  \iff  \text{true} $$
 
@@ -87,7 +87,7 @@ $$ p  \vee  (q  \vee  r)  \iff  (p  \vee  q)  \vee  r $$
 
 $$ p \vee q  \iff q \vee p $$
 
-\paragraph{Law 3.7} a proposition combined via disjunction with its own negation will always resolve to true
+\paragraph{Law 3.7} a proposition combined via disjunction with its own negation is equivalent to true
 
 $$ (( \neg p)  \vee  p)  \iff  \text{true} $$
 
@@ -101,7 +101,7 @@ $$ p  \wedge  (q  \vee  r)  \iff  (p  \wedge  q)  \vee  (p  \wedge  r) $$
 
 \subsection{Laws of Implication}
 
-\paragraph{Law 4.1} p implies q is the same as not p, or q
+\paragraph{Law 4.1} $p$ implies $q$ is the same as `not $p$, or $q$'
 
 $$ (p  \implies   q)  \iff  (( \neg p)  \vee  q) $$
 
@@ -123,11 +123,15 @@ $$ (p  \iff  p)  \iff  \text{true} $$
 
 $$ (p  \iff  ( \neg p))  \iff  \text{false} $$
 
-\paragraph{Law 5.5} claiming proposition p is equivalent proposition q is the same as claiming that p implies qand q implies p
+\paragraph{Law 5.5} claiming `$p$ is equivalent to $q$' is the same as claiming that $p$ implies $q$ and $q$ implies $p$
 
 $$ (p  \iff  q)  \iff  ((p  \implies   q)  \wedge  (q  \implies   p)) $$
 
+\clearpage
+
 \section{Set Theory}
+
+The following laws of set theory are compiled and numbered for the benefit of this course. This is not an exhaustive list.
 
 \subsection{Laws of Set membership}
 
@@ -268,6 +272,8 @@ $$ R \setminus (S  \cap  T) = (R \setminus S)  \cup  (R \setminus T) $$
 \paragraph{Law 7.1} When two different sets have exactly the same elements, they are equal
 
 $$ x \in S\iff x \in T $$
+
+\clearpage
 
 \subsection{Laws of cardinality}
 
