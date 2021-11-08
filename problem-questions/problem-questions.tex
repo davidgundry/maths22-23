@@ -659,26 +659,28 @@ Use equational reasoning to prove the following. Reference the laws of set theor
     \begin{tikzpicture}
         \graph [simple, nodes={draw, circle, minimum size = .5cm}, clockwise] 
         {
-          subgraph C_n [name=inner, radius = 1.5cm, n=3];
+          subgraph C_n [name=middle, radius = 0cm, n=1, V={8}];
+          subgraph C_n [name=inner, radius = 1.5cm, n=3, V={5,6,7}];
           subgraph C_n [name=outer, radius = 3cm, n=4];
         };
         \draw
-         (inner 1) -- (outer 2)
-         (inner 3) -- (outer 4)
-         (inner 2) -- (outer 4)
-         (inner 3) -- (outer 1)
-         (inner 2) -- (outer 3);
+         (middle 8) -- (inner 7)
+         (inner 5) -- (outer 2)
+
+         (inner 6) -- (outer 4)
+         (inner 7) -- (outer 1);
         \end{tikzpicture}
     \end{figure}
 
     \begin{enumerate}
-        \item Is it directed?
-        \item Is it connected?
-        \item Is it cyclic?
-        \item What is the maximum degree of the graph?
-        \item What is the degree of node 3?
-        \item Create an adjacency matrix for the given graph
+        \item Is it directed, connected, and/or cyclic?
+        \item List source, sink, and tranfer nodes as sets
+        \item Give the minimum and maximum degree of the graph
+        \item What is the degree of node 4?
         \item List the loops in this graph as a set
+        \item Express a simple cycle in this graph as an ordered list
+        \item Express a simple path that connects every node in this graph as an ordered list
+        \item Express a shortest path connecting every even-numbered node as an ordered list
     \end{enumerate}
 
 \subsection{}
@@ -686,10 +688,8 @@ Use equational reasoning to prove the following. Reference the laws of set theor
     A graph G is defined as $G = \{V, E\}$, where $V = \{ a, b, c \}$, and $E = V \times V$
 
     \begin{enumerate}
-        \item Is it directed?
-        \item Is it connected?
-        \item Is it cyclic?
-        \item What is the maximum degree of the graph?
+        \item Is it directed, connected, and/or cyclic?
+        \item Give the minimum and maximum degree of the graph
         \item What is the degree of node b?
     \end{enumerate}
 
@@ -720,16 +720,7 @@ Use equational reasoning to prove the following. Reference the laws of set theor
         \item Give an intensional definition of E using set comprehension
     \end{enumerate}
 
-\subsection{}
-
-    A formal string-rewriting system is defined with the the rule $ a \rightsquigarrow abb $, and the starting string $a$.
-    
-    \begin{enumerate}
-        \item Is $aaabbbbbb$ a string in this system? If so, draw a graph of the derivation $a \Rightarrow^* aaabbbbbb$
-        \item Is there any derivation possible in this system that would result in a cyclic graph?
-    \end{enumerate} 
-
-\subsection{}
+    \subsection{}
 
     A formal string-rewriting system is defined with the rules below. The starting string is $a$
     
@@ -739,9 +730,8 @@ Use equational reasoning to prove the following. Reference the laws of set theor
     \end{itemize} 
 
     \begin{enumerate}
-        \item Draw a graph, of the first 5 unique strings that can be constructed in this system, where edges represent applications of one of the  grammatical rules
-        \item Is this graph directed?
-        \item Is this graph cyclic?
+        \item Draw a graph of the first 5 unique strings that can be constructed in this system, where edges represent applications of one of the  grammatical rules
+        \item The graph of the first 5 unique strings directed, connected, and/or cyclic?
     \end{enumerate}
 
 \clearpage
@@ -1009,6 +999,26 @@ You take 5 friends to two ice cream shops. You get them to rate each shop out of
 \end{table}
 
 What is the t statistic for the hypothesis that people prefer Shop B to Shop A?
+
+\clearpage
+
+$$ \overline{x} = \frac{1}{n}\sum_{i=1}^{n} x_i $$
+
+$$ \frac{\sum_{i=1}^{n} w_ix_i}{\sum_{i=1}^{n} w_i} $$
+
+$$ \left( \prod_{i=1}^{n} x_i \right) ^{\frac{1}{n}} $$
+
+$$ \sigma^2 = \frac{\sum_{i=1}^{n} (x_1 - \overline{x})^2}{n} $$
+
+$$ s^2 = \frac{\sum_{i=1}^{n} (x_1 - \overline{x})^2}{n-1} $$
+
+$$ \sigma = \sqrt{\frac{\sum_{i=1}^{n} (x_1 - \overline{x})^2}{n}} $$
+
+$$ s = \sqrt{\frac{\sum_{i=1}^{n} (x_1 - \overline{x})^2}{n-1}} $$
+
+$$ \sigma(b + \sum_j w_j x_j) $$
+
+$$\sigma(z) = \frac{1}{1 + e^{-z}}$$
 
 \iffalse
 \clearpage
