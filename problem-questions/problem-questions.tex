@@ -476,7 +476,9 @@ For this, use only the laws given in the lecture slides and the handout.
         \item The set of Real numbers, less the Natural numbers
         \item The set of even primes
         \item The set of digits used in binary
-        \item The set red clubs in a standard deck of cards
+        \item The set black hearts in a standard deck of cards
+        \item A set that has no proper subsets
+        \item A set with exactly two subsets
     \end{enumerate}
 
 \subsection{}
@@ -522,34 +524,18 @@ For this, use only the laws given in the lecture slides and the handout.
     \begin{enumerate}
         \item $ (A \setminus B) \cap C$
         \item $ ( B \cap C ) \cup A $
+        \item $ C \cup (A \setminus (B \cap A)) $
     \end{enumerate}
-
 
 \subsection{}
 
-Let 0 (zero) be represented as $\emptyset$. Assume the common arithmetic operations ($+$, $\times$, etc.) work as normal. For any $a, b \in \mathbb{N}$ such that $a + 1 = b$, then $a \in b $. In this way we can define the numbers:
+Use equational reasoning to prove the following. Reference the laws of set theory and propositional logic introduced in the lectures and on the handout.
 
-    \begin{itemize}
-        \item 0 = $ \emptyset $
-        \item 1 = $ \{ \emptyset \} $
-        \item 2 = $ \{ \{ \emptyset \} \} $
-        \item etc.
-    \end{itemize}
-
-     Solve the following and express the answer in set notation
-    
-    \begin{enumerate}
-        \item $ \emptyset + \emptyset $
-        \item $ \{ \{ \emptyset \} \} \times \{ \{ \emptyset \} \} $
-        \item $\{ \{ \{ \{ \emptyset \} \} \} \} + \{ \{ \{ \emptyset \} \} \} - \{ \emptyset \} $
-    \end{enumerate}
-    
-    State whether the following are true
-
-    \begin{enumerate}
-        \item $ 9 \in 10 $
-        \item $ (\{ \{ \emptyset \} \} + \{ \emptyset \} ) \in ( \{ \{ \{ \emptyset \} \} \} )$
-    \end{enumerate}
+\begin{enumerate}
+    \item $S \subseteq (T \cup (S \cap S)) $
+    \item $ (S = T) \wedge (T \not\subseteq S) \Longleftrightarrow \text{false} $
+    \item $ \emptyset \not\subset ((S \cap S) \setminus (S \setminus \emptyset)) $
+\end{enumerate}
 
 \clearpage
 \section{Reading Week}
