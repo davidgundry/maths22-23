@@ -293,6 +293,10 @@ $$ \#(S  \cup  T) = \#S + \#T - \#(S  \cap  T) $$
 
 $$ \#(S \setminus T) = \#S - \#(S  \cap  T) $$
 
+\paragraph{Law 8.5} the Cardinality of the cartesian product of S and R is the product of the cardinalities of S and R
+
+$$ \#(S \times T) = \#S  \times  \#T $$
+
 \subsection{Laws of Power Sets}
 
 \paragraph{Law 9.1} Set S is an element of the power set of T if and only if S is a subset of T
@@ -307,18 +311,36 @@ $$  \emptyset  \in   \mathbb{P} (S) $$
 
 $$ S  \in  \mathbb{P} (S) $$
 
-\paragraph{Law 9.4} the power set of set S is equal to two to the power of the cardinality of S
+\paragraph{Law 9.4} the cardinality of the power set of set S is equal to two to the power of the cardinality of S
 
 $$ \#( \mathbb{P} (S)) = 2^{\#(S)} $$
 
+\paragraph{Law 9.5} for a given set R which is an element of the power set of S, the intersection of R and S is equal to R.
+
+$$ R \cap S = R \text{, where } R \in \mathbb{P} ( S ) $$
+
+\subsection{Laws of Complements}
+
+\paragraph{Law 10.1} For a given set T $\subseteq$ S, the compliment of T is equal to the set difference in S and T
+
+$$ T^{-} = S \setminus T \text{, where } T \in \mathbb{P} ( S ) $$
+
+\paragraph{Law 10.2} For a given set T $\subseteq$ S, The union of T and its compliment is equal to the S
+
+$$ T \cup T^{-} = S \text{, where } T \in \mathbb{P} ( S ) $$
+
+\paragraph{Law 10.3} For a given set T $\subseteq$ S, The  intersection of T and its compliment is equal to the empty set.
+
+$$ T \cap T^{-}  = \emptyset \text{,	where } T \in \mathbb{P} ( S ) $$
+
 \subsection{Laws of Generalised Operations}
 
-\paragraph{Law 10.1 (Generalised Union)} for any set of sets A and any element a, $a  \in   \bigcup  A $ if, and only if, there is some set $S  \in  A $ such that $ a  \in  S$
+\paragraph{Law 11.1 } for any set of sets A and any element a, $a  \in   \bigcup  A $ if, and only if, there is some set $S  \in  A $ such that $ a  \in  S$
 
-$$a  \in   \bigcup A \iff S  \in  A|a  \in  S$$
+$$a  \in   \bigcup A \iff \exists S  \in  A . a  \in  S$$
 
-\paragraph{Law 10.2: (Generalised Intersection)} for any set of sets A and any element a, $a  \in  \bigcap A$ if, and only if, for every set $ S  \in  A $ it is the case that $ a  \in  S$
+\paragraph{Law 11.2} for any set of sets A and any element a, $a  \in  \bigcap A$ if, and only if, for every set $ S  \in  A $ it is the case that $ a  \in  S$
 
-$$a  \in   \bigcap  A \iff \{ \forall S  \in  A |a  \in  S \}$$
+$$a  \in   \bigcap  A \iff \forall S  \in  A  . a  \in  S $$
 
 \end{document}

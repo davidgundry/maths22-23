@@ -546,15 +546,18 @@ Use equational reasoning to prove the following. Reference the laws of set theor
 
 \subsection{}
 
-    Give the cardinality of the following sets
+    Give the cardinality of the following sets (state if infinite), where $ A = \{ a, b \}, B = \{ a, b, d\}, C = \{a, b, d, e \}$
 
+    \begin{multicols}{2}
     \begin{enumerate}
         \item $\{ 7, 8, 8\}$
-        \item $\bigcap \{ \{ a, b \}, \{ b, a, d\}, \{d, f, a, b \}$ \}
+        \item $\bigcap \{ A, B, C \} $
         \item $\mathbb{P}(\{ a, b, c\})$
         \item $\mathbb{N}^0 \setminus \mathbb{N}^+$
         \item $\mathbb{Q} \setminus \mathbb{R}$
+        \item $\bigcup \{ A, B, C \} $
     \end{enumerate}
+\end{multicols}
 
 \subsection{}
 
@@ -570,31 +573,38 @@ Use equational reasoning to prove the following. Reference the laws of set theor
         \item $ \# (C \cap B) = \emptyset$
     \end{itemize}
 \end{multicols}
-
+\begin{multicols}{2}
     \begin{enumerate}
         \item $ A \cup B $
         \item $ \mathbb{P}(A \setminus B)$
         \item $ C \cap A $
         \item $ B \cup C $
         \item $ A \times B $
+        \item $ B \setminus C$
     \end{enumerate}
+\end{multicols}
 
     \subsection{}
 
-    Give the extension of the following sets.
+    Give the extension of the following sets, , given $A = \{a, b, c, d \}$, $B = \{a, b, c\}$
 
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item $\mathbb{P}(A)$
+            \item $ \bigcup  \mathbb{P}(B)  $
+            \item $ \{a, b\} \times A $
+            \item $ \mathbb{P} ( \emptyset ) $
+        \end{enumerate}
+    \end{multicols}
     \begin{enumerate}
-        \item $\mathbb{P}(\{ 1, 2, 3, 4 \})$
-        \item $ \bigcup  \mathbb{P}(\{a, b, c\})  $
-        \item $ \{a, b\} \times \{ a, b, c, d \} $
-        \item $ \mathbb{P} ( \emptyset ) $
+        \setcounter{enumi}{4}
         \item $ \ ( \{ 1 \} \times \{ a, b \} ) \cap ( \{ 1, 2 \} \times \{ b, a \} ) $
     \end{enumerate}
 
 
 \subsection{}
 
-    Give the extension of the following sets.
+    Give the extension of the following sets
 
     \begin{enumerate}
         \item $\{ n : \mathbb{N} \mid n \mod 3 = 1 \wedge n < 13 \} $
@@ -612,11 +622,12 @@ Use equational reasoning to prove the following. Reference the laws of set theor
     \begin{enumerate}
         \item $ \{ n : \mathbb{N}^+ \bullet n^n \} $
         \item $ \{ n : \mathbb{N}^+ \bullet \frac{n}{n+1} \} $
+        \item $ \{ n : \mathbb{Z} \mid n^2 \leq 16  \} $
     \end{enumerate}
 
 \subsection{}
 
-    Given the table below, give the extensions of the following sets
+    Given the table below, with types Name, Age, and Group, give the extensions of the following sets
 
     \begin{table}[h!]
         \centering
@@ -633,8 +644,9 @@ Use equational reasoning to prove the following. Reference the laws of set theor
     \end{table}
 
     \begin{enumerate}
-        \item $ \{ x : Group \times Name \} $
+        \item $ \{ x : Group \times Name \mid \text{ true} \} $
         \item $ \{ x : Name \times Age \mid x.2 \ge 18 \bullet x.1 \} $
+        \item $ \{ x : Name \times Age \times Group \mid x.3 = A \} $
         \item $ \{ a : Name \times Group; b : Name \times Group \mid a.2 = b.2 \bullet \{a.1, b.1\} \} $
     \end{enumerate} 
 
@@ -645,6 +657,8 @@ Use equational reasoning to prove the following. Reference the laws of set theor
     \begin{enumerate}
         \item The set of all names
         \item The set of groups containing someone under the age of 18
+        \item The set of Name, Age tuples for someone whose age is a multiple of 3
+        \item The set of Name, Age, Group tuples for everyone who isn't called Alice 
     \end{enumerate}
 
 \clearpage
@@ -675,13 +689,14 @@ Use equational reasoning to prove the following. Reference the laws of set theor
     \begin{enumerate}
         \item Is it directed, connected, and/or cyclic?
         \item List source, sink, and tranfer nodes as sets
-        \item Give the minimum and maximum degree of the graph
+        \item Give the min. and max. degree of the graph
         \item What is the degree of node 4?
         \item List the loops in this graph as a set
-        \item Express a simple cycle in this graph as an ordered list
-        \item Express a simple path that connects every node in this graph as an ordered list
-        \item Express a shortest path connecting every even-numbered node as an ordered list
+        \item Write a simple cycle in this graph as a list
+        \item Write a simple path that connects every node in this graph as a list
+        \item Write a shortest path connecting every even-numbered node as a list
     \end{enumerate}
+
 
 \subsection{}
 
@@ -689,38 +704,11 @@ Use equational reasoning to prove the following. Reference the laws of set theor
 
     \begin{enumerate}
         \item Is it directed, connected, and/or cyclic?
-        \item Give the minimum and maximum degree of the graph
-        \item What is the degree of node b?
+        \item How many nodes and edges does it contain?
+        \item Give the min. and max. degree of the graph
     \end{enumerate}
 
 \subsection{}
-
-    Below is a database for a social network
-
-    \begin{table}[h!]
-        \centering
-        \begin{tabular}{c | c | c }
-            \toprule
-            Name & Age & Group \\
-            \midrule
-            Alice & 18 & A  \\
-            Bob & 17 & B  \\
-            Eve & 19 & A \\
-            Mary & 22 & B \\
-            \bottomrule
-        \end{tabular}
-    \end{table}
-
-    A graph of connections is given by $ G = ( V, E)$ where $ V = \{ x : Name \}$, % and $ E = \{ x : Name \times Group; y : Name \times Group \mid x.2 = y.2 \bullet (x.1, y.1) \} $
-
-    The graph has directed edges between those pairs of users who share a group
-
-    \begin{enumerate}
-        \item Give an extensional definition of E
-        \item Give an intensional definition of E using set comprehension
-    \end{enumerate}
-
-    \subsection{}
 
     A formal string-rewriting system is defined with the rules below. The starting string is $a$
     
@@ -731,80 +719,36 @@ Use equational reasoning to prove the following. Reference the laws of set theor
 
     \begin{enumerate}
         \item Draw a graph of the first 5 unique strings that can be constructed in this system, where edges represent applications of one of the  grammatical rules
-        \item The graph of the first 5 unique strings directed, connected, and/or cyclic?
     \end{enumerate}
 
-\clearpage
-\section{Descriptive Statistics}
 
 \subsection{}
 
-    For the following types of data, say whether they are nominal, ordinal, or numeric, and give an appropriate measure of central tendancy to use to describe such data
+    Below is a database for a Twitter-like social network
 
-    \begin{enumerate}
-        \item Duration of daily commute
-        \item Frequency in Hz
-        \item DEFCON level
-        \item Brands of espresso maker
-    \end{enumerate}
-
-\subsection{}
-
-    For the following data, calculate the mean, median, and mode
-
-    \begin{enumerate}
-        \item 4, 2, 5, 2, 34, 2, 4
-        \item 1, 4, 6, 2, 4, 3, 1
-    \end{enumerate}
-
-\subsection{}
-
-    The following data represents a sample of scores collected from two levels of a mobile game. Calculate the range, inter-quartile range, and an appropriate form of standard deviation 
-
-    \begin{enumerate}
-        \item 1, 52, 3, 53, 23, 5, 3, 6
-        \item 5, 2, 14, 25, 14, 11, 5
-    \end{enumerate}
-
-\subsection{}
-
-    I recruit undergraduate students for a study on video game immersion, which is measured with a questionnaire. Half of the participants are asked to drink 3 cups of coffee before the experiment. Half are asked to not drink any coffee before the experiment.
-    
-    \begin{enumerate}
-        \item What is my dependant variable?
-        \item What is my independant variable?
-        \item What is my sample?
-    \end{enumerate}
-
-\subsection{}
-
-    What is the approximate correlation of the data shown? Pick the closest out of $\{-1, -0.5, 0, 0.5, 1\}$
-
-    \begin{enumerate}
-        \item\includegraphics[width=0.49\textwidth]{correlation}
-        \item \includegraphics[width=0.49\textwidth]{nocorrelation}
-    \end{enumerate}
-
-\subsection{}
-
-    Use the least squares method to provide a formula for the line of best fit $y = a + bx$ through the data below. The formula for the least squares method is reproduced below to help you.
-
-    \begin{multicols}{2}
-    $$ b = \frac{\sum{(x_i - \overline{x})(y_i - \overline{y})}}{\sum{(x_i - \overline{x})^2}} $$
-    $$ a = \overline{y} - b\overline{x}$$
-    \begin{center}
-        \begin{tabular}{c | c}
+    \begin{table}[h!]
+        \centering
+        \begin{tabular}{c | c | c | c }
             \toprule
-            X & Y  \\
+            Username & Following & Posts \\
             \midrule
-            1 & 5 \\
-            2 & 7 \\
-            3 & 10 \\
-            4 & 9 \\
+            Alice & \{Bob, Eve\} & 24 \\
+            Bob & \{Alice, Eve\} & 3  \\
+            Eve & \{Alice, Mary\} & 124 \\
+            Mary & \{Eve\} & 10 \\
             \bottomrule
-        \end{tabular}        
-    \end{center}
-\end{multicols}
+        \end{tabular}
+    \end{table}
+
+    We can produce a graph of this social network $ G = ( V, E)$ where $ V = \{ x : \text{Username} \mid \text{true} \}$, and E is a set of directed edges (a, b) where A `follows' B.
+
+    \begin{enumerate}
+        \item Give an extensional definition of E
+        \item Give an intensional definition of E using set comprehension
+        \item List of followers: Give a set comprehension that returns a tuple (a, b), where a is a username and b is a person following that user
+        \item Follow recommendation: Give a set comprehension that returns a tuple (a, b), where $a$ is a username and $b$ is a username of someone $a$ might like to follow ($a$ might `like to follow' $b$ if and only if $b$ is followed by someone $a$ follows, $a$ does not already follow them, and $a$ and $b$ are not the same person).
+    \end{enumerate}
+
 
 \clearpage
 \section{Probability}
@@ -909,8 +853,80 @@ Use equational reasoning to prove the following. Reference the laws of set theor
         \end{tabular}
     \end{table}
 
-    Calculate posterior probabilities for all three hypotheses, given event E has been observed.
+    Calculate posterior probabilities $P( H_n \mid E)$ for all three hypotheses.
+    
 
+\clearpage
+\section{Descriptive Statistics}
+
+\subsection{}
+
+    For the following types of data, say whether they are nominal, ordinal, or numeric, and give an appropriate measure of central tendancy to use to describe such data
+
+    \begin{enumerate}
+        \item Duration of daily commute
+        \item Frequency in Hz
+        \item DEFCON level
+        \item Brands of espresso maker
+    \end{enumerate}
+
+\subsection{}
+
+    For the following data, calculate the mean, median, and mode
+
+    \begin{enumerate}
+        \item 4, 2, 5, 2, 34, 2, 4
+        \item 1, 4, 6, 2, 4, 3, 1
+    \end{enumerate}
+
+\subsection{}
+
+    The following data represents a sample of scores collected from two levels of a mobile game. Calculate the range, inter-quartile range, and an appropriate form of standard deviation 
+
+    \begin{enumerate}
+        \item 1, 52, 3, 53, 23, 5, 3, 6
+        \item 5, 2, 14, 25, 14, 11, 5
+    \end{enumerate}
+
+\subsection{}
+
+    I recruit undergraduate students for a study on video game immersion, which is measured with a questionnaire. Half of the participants are asked to drink 3 cups of coffee before the experiment. Half are asked to not drink any coffee before the experiment.
+    
+    \begin{enumerate}
+        \item What is my dependant variable?
+        \item What is my independant variable?
+        \item What is my sample?
+    \end{enumerate}
+
+\subsection{}
+
+    What is the approximate correlation of the data shown? Pick the closest out of $\{-1, -0.5, 0, 0.5, 1\}$
+
+    \begin{enumerate}
+        \item\includegraphics[width=0.49\textwidth]{correlation}
+        \item \includegraphics[width=0.49\textwidth]{nocorrelation}
+    \end{enumerate}
+
+\subsection{}
+
+    Use the least squares method to provide a formula for the line of best fit $y = a + bx$ through the data below. The formula for the least squares method is reproduced below to help you.
+
+    \begin{multicols}{2}
+    $$ b = \frac{\sum{(x_i - \overline{x})(y_i - \overline{y})}}{\sum{(x_i - \overline{x})^2}} $$
+    $$ a = \overline{y} - b\overline{x}$$
+    \begin{center}
+        \begin{tabular}{c | c}
+            \toprule
+            X & Y  \\
+            \midrule
+            1 & 5 \\
+            2 & 7 \\
+            3 & 10 \\
+            4 & 9 \\
+            \bottomrule
+        \end{tabular}        
+    \end{center}
+\end{multicols}
 
 \clearpage
 \section{Inferrential Statistics}
