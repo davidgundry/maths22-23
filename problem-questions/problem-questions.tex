@@ -872,7 +872,7 @@ Use equational reasoning to prove the following. Reference the laws of set theor
 
 \subsection{}
 
-    For the following data, calculate the mean, median, and mode
+    For the following data calculate the median and mode. Use Tukey's Fences with a value of $k=1.5$ to exclude outliers before calculating the mean.
 
     \begin{enumerate}
         \item 4, 2, 5, 2, 34, 2, 4
@@ -881,7 +881,7 @@ Use equational reasoning to prove the following. Reference the laws of set theor
 
 \subsection{}
 
-    The following data represents a sample of scores collected from two levels of a mobile game. Calculate the range, inter-quartile range, and an appropriate form of standard deviation 
+    The following data represents a sample of scores collected from two levels of a mobile game. Calculate the range, inter-quartile range, and an appropriate form of standard deviation.  
 
     \begin{enumerate}
         \item 1, 52, 3, 53, 23, 5, 3, 6
@@ -890,22 +890,12 @@ Use equational reasoning to prove the following. Reference the laws of set theor
 
 \subsection{}
 
-    I recruit undergraduate students for a study on video game immersion, which is measured with a questionnaire. Half of the participants are asked to drink 3 cups of coffee before the experiment. Half are asked to not drink any coffee before the experiment.
-    
-    \begin{enumerate}
-        \item What is my dependant variable?
-        \item What is my independant variable?
-        \item What is my sample?
-    \end{enumerate}
-
-\subsection{}
-
     What is the approximate correlation of the data shown? Pick the closest out of $\{-1, -0.5, 0, 0.5, 1\}$
 
-    \begin{enumerate}
-        \item\includegraphics[width=0.49\textwidth]{correlation}
-        \item \includegraphics[width=0.49\textwidth]{nocorrelation}
-    \end{enumerate}
+  %  \begin{enumerate}
+       \includegraphics[width=0.49\textwidth]{correlation}
+   %     %\item \includegraphics[width=0.49\textwidth]{nocorrelation}
+   % \end{enumerate}
 
 \subsection{}
 
@@ -927,9 +917,6 @@ Use equational reasoning to prove the following. Reference the laws of set theor
         \end{tabular}        
     \end{center}
 \end{multicols}
-
-\clearpage
-\section{Inferrential Statistics}
 
 \subsection{}
 
@@ -956,27 +943,52 @@ Let Y be a continuous variable uniformly distributed between 0 and 1.
     \item What is $P(Y > 0.5)$?
 \end{enumerate}
 
+
+\clearpage
+\section{Inferrential Statistics}
+
 \subsection{}
 
-Assuming a conventional experiment-wise value for $ \alpha = 0.05 $, and the Bonferroni adjustment for multiple testing ( $\alpha_{adjusted} = \frac{\alpha}{m}$), which of the experiments below report at least 1 statistically significant result.
+    I recruit undergraduate students for a study on video game immersion, which is measured with a questionnaire. Half of the participants are asked to drink 3 cups of coffee before the experiment. Half are asked to not drink any coffee before the experiment.
+    
+    \begin{enumerate}
+        \item What is my dependant variable?
+        \item What is my independant variable?
+        \item What is my sample?
+    \end{enumerate}
+
+\subsection{}
+
+When I run the above experiment I test each of my hypotheses at $\alpha = 0.05$. Assume the probabilities of getting a type 1 errors are independant. What is the probability of a Type 1 error if I perform:
 
 \begin{enumerate}
-    \item $ p = 0.04 $
-    \item $ p = 0.12 $
-    \item An experiment with two hypotheses, $p = 0.03$ and $p=0.04 $
-    \item An experiment with three hypotheses, $p = 0.01$ $p=0.24$ and $p=0.0025 $ 
+    \item 1 hypothesis test
+    \item 2 hypothesis tests
+    \item 5 hypothesis tests
+\end{enumerate}
+
+\subsection{}
+
+For the above experiment, I decide to use the Bonferroni adjustment for multiple testing. Which of the experiments below report at least 1 statistically significant result.
+
+\begin{enumerate}
+    \item Performing one hypothesis test, $ p = 0.06 $
+    \item Performing two hypothesis tests, $p = 0.03$ and $p=0.04 $
+    \item Performing five hypothesis tests, $p = 0.01$ $p=0.24$, $p=0.0025$, $p=0.004$, and $p=0.0001$ 
 \end{enumerate}
 
 \subsection{}
 
 You run a series of experiments. The test statistics and degrees of freedom (if appropriate) are given below. For each, state whether the result is significant with $\alpha = 0.05$
 
-\begin{enumerate}
-    \item $z = 0.24 $
-    \item $z = 2.1 $
-    \item $t = 0.04$, $df = 33$
-    \item $t = 4.31$, $df = 8$
-\end{enumerate}
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $z = 0.24 $
+        \item $z = 2.1 $
+        \item $t = 0.04$, $df = 33$
+        \item $t = 4.31$, $df = 8$
+    \end{enumerate}
+\end{multicols}
 
 \subsection{}
 
@@ -1017,6 +1029,16 @@ You take 5 friends to two ice cream shops. You get them to rate each shop out of
 What is the t statistic for the hypothesis that people prefer Shop B to Shop A?
 
 \clearpage
+
+$$ z = \frac{x - \mu}{\sigma} $$
+
+
+$$ \frac{\text{observed} - \text{expected}}{\text{typical variation}} $$
+
+$$ \frac{\text{observed} - \text{expected}}{\text{SE}} $$
+
+
+$$ \alpha_{\text{adjusted}} = \frac{\alpha_{\text{overall}}}{m} $$
 
 $$ \overline{x} = \frac{1}{n}\sum_{i=1}^{n} x_i $$
 
