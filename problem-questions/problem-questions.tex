@@ -4,18 +4,32 @@
 \usepackage{amssymb}
 \usepackage{booktabs}
 \usepackage{multicol}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
 
 \usepackage{tikz}
 \usetikzlibrary{graphs,graphs.standard}
 
 
+\newcounter{pmarks} 
+\setcounter{pmarks}{0}
+\newcounter{marks} 
+\setcounter{marks}{0}
+\newcounter{realpage} 
+\setcounter{realpage}{1}
+
+%\newcommand\mrk[1]{}
+\newcommand\mrk[1]{{\hfill\color{blue}\small[{#1}]}\addtocounter{pmarks}{#1}\addtocounter{marks}{#1}}
+
 \usepackage{fancyhdr}
 
 \pagestyle{fancy}
 \fancyhf{}
-\rhead{Problem Questions}
+%\rhead{Problem Questions}
+\rhead{Assessment Questions p.\arabic{realpage}/10 \addtocounter{realpage}{1}}
 \lhead{Week \thepage}
 \rfoot{Mathematics and Problem Solving 2021-22}
+\lfoot{{\color{blue}Total marks for this section: \arabic{pmarks}}\setcounter{pmarks}{0}}
 
 \begin{document}
 
@@ -43,8 +57,8 @@
     \end{figure}
 
     \begin{enumerate}
-        \item Is the derivation $A_1 \Rightarrow^*_R A_5$ possible within this system?
-        \item If so, provide a derivation.
+        \item Is the derivation $A_1 \Rightarrow^*_R A_5$ possible within this system? \mrk{1}
+        \item If so, provide a derivation. \mrk{1}
     \end{enumerate}
 
 \subsection{}
@@ -52,9 +66,9 @@
     A formal system has states $X_1, \dots, X_{7}$. The rules $R$ are such that from a state $X_i$ it is possible to derive the state $X_{i+1}$
 
     \begin{enumerate}
-        \item List the steps in the derivation $X_1 \Rightarrow^*_R X_7$
-        \item What is the length of this derivation?
-        \item Is there a derivation $X_4 \Rightarrow^*_R X_3$?
+        \item List the steps in the derivation $X_1 \Rightarrow^*_R X_7$ \mrk{1}
+        \item What is the length of this derivation? \mrk{1}
+        \item Is there a derivation $X_4 \Rightarrow^*_R X_3$? \mrk{1}
     \end{enumerate}
 
 \subsection{}
@@ -69,8 +83,8 @@
     Let A be the string $aaaababbbbabababaaaababa$
 
     \begin{enumerate}
-        \item List all the strings B that can be derived from A in one step: $A \Rightarrow_R B$
-        \item List the strings in one possible derivation of T, $A \Rightarrow^*_R T$, where T is a terminal state (where no further rule applications are possible)
+        \item List all the strings B that can be derived from A in one step: $A \Rightarrow_R B$ \mrk{1}
+        \item List the strings in one possible derivation of T, $A \Rightarrow^*_R T$, where T is a terminal state (where no further rule applications are possible) \mrk{1}
     \end{enumerate}
 
 \subsection{}
@@ -89,10 +103,10 @@
     For each of the following, derive a terminal string (where no further rule applications are possible)
 
     \begin{enumerate}
-        \item $((fot)ot)$
-        \item $((fof)o(tot))$
-        \item $(((tof)of)o(fo(fof)))$
-        \item Give a string from which the string $f$ is derivable by a derivation of length 3
+        \item $((fot)ot)$ \mrk{1}
+        \item $((fof)o(tot))$ \mrk{1}
+        \item $(((tof)of)o(fo(fof)))$ \mrk{1}
+        \item Give a string from which the string $f$ is derivable by a derivation of length 3 \mrk{1}
     \end{enumerate}
 
 \subsection{}
@@ -100,12 +114,12 @@
     For the following binary relations, state whether they are: Reflexive, Symmetric, Transitive
 
     \begin{enumerate}
-        \item $=$
-        \item $ > $
-        \item $ \leq $
-        \item $ \ne $
-        \item older than
-        \item can be rotated (by some angle) to get
+        \item $=$ \mrk{1}
+        \item $ > $ \mrk{1}
+        \item $ \leq $ \mrk{1}
+        \item $ \ne $ \mrk{1}
+        \item older than \mrk{1}
+        \item can be rotated (by some angle) to get \mrk{1}
     \end{enumerate}
 
 \subsection{}
@@ -113,11 +127,11 @@
     For the following table of binary operators, state whether they are: Commutative, Associative
 
     \begin{enumerate}
-        \item $ + $
-        \item $ \times $
-        \item $ \div $
-        \item $ \times \pmod{n} $
-        \item $ \div \pmod{n} $
+        \item $ + $ \mrk{1}
+        \item $ \times $ \mrk{1}
+        \item $ \div $ \mrk{1}
+        \item $ \times \pmod{n} $ \mrk{1}
+        \item $ \div \pmod{n} $ \mrk{1}
     \end{enumerate}   
 
 
@@ -129,11 +143,11 @@
     Solve the following modular arithmetic questions
 
     \begin{enumerate}
-        \item $(13 \mod 3) + (23 \mod 4)$
-        \item $(22 \mod 7) \times (13 \mod 7)$
-        \item $(14 \mod 55 + 42 \mod 55) \times (13 \mod 55)$
-        \item $11 \div 7 \pmod{13}$
-        \item $4 \div 11 \pmod{17}$
+        \item $(13 \mod 3) + (23 \mod 4)$  \mrk{1}
+        \item $(22 \mod 7) \times (13 \mod 7)$  \mrk{1}
+        \item $(14 \mod 55 + 42 \mod 55) \times (13 \mod 55)$  \mrk{1}
+        \item $11 \div 7 \pmod{13}$  \mrk{1}
+        \item $4 \div 11 \pmod{17}$  \mrk{1}
     \end{enumerate}
 
 \subsection{}
@@ -142,20 +156,20 @@
 
     \begin{multicols}{2}
     \begin{enumerate}
-        \item $ 0^{-1} \pmod{8} $
-        \item $ 1^{-1} \pmod{8} $
-        \item $ 2^{-1} \pmod{8} $
-        \item $ 3^{-1} \pmod{8} $
-        \item $ 4^{-1} \pmod{8} $
-        \item $ 5^{-1} \pmod{8} $
-        \item $ 6^{-1} \pmod{8} $
-        \item $ 7^{-1} \pmod{8} $
+        \item $ 0^{-1} \pmod{8} $ \mrk{1}
+        \item $ 1^{-1} \pmod{8} $ \mrk{1}
+        \item $ 2^{-1} \pmod{8} $ \mrk{1}
+        \item $ 3^{-1} \pmod{8} $ \mrk{1}
+        \item $ 4^{-1} \pmod{8} $ \mrk{1}
+        \item $ 5^{-1} \pmod{8} $ \mrk{1}
+        \item $ 6^{-1} \pmod{8} $ \mrk{1}
+        \item $ 7^{-1} \pmod{8} $ \mrk{1}
     \end{enumerate}
 \end{multicols}
 
 \subsection{}
 
-    If multiplication distributes over subtraction under modulus then, which of the following statements are true
+    If multiplication distributes over subtraction under modulus then, which of the following statements are true \mrk{1}
 
     \begin{enumerate}
         \item $a ( b - c ) \equiv a - bc \pmod{n} $
@@ -169,9 +183,9 @@
     What is the additive inverse of:
 
     \begin{enumerate}
-        \item $24$
-        \item $5 \pmod{17}$
-        \item $a \mod b$ (give your answer as a formula)
+        \item $24$ \mrk{1}
+        \item $5 \pmod{17}$ \mrk{1}
+        \item $a \mod b$ (give your answer as a formula) \mrk{1}
     \end{enumerate}
 
 \subsection{}
@@ -180,10 +194,10 @@
 
     \begin{multicols}{2}
         \begin{enumerate}
-            \item $68$
-            \item $123$
-            \item $92$
-            \item $44$
+            \item $68$ \mrk{1}
+            \item $123$ \mrk{1}
+            \item $92$ \mrk{1}
+            \item $44$ \mrk{1}
         \end{enumerate}
     \end{multicols}
 
@@ -192,8 +206,8 @@
     Assume a string is encrypted using the encryption function $E(X) = (aX + b) \mod n$, where $X$ is the index of an element drawn from the alphabet [abcdefghijklmnopqrstuvwxyz0123456789], and $n$ is the length of that alphabet.
 
     \begin{enumerate}
-        \item Encrypt the string ``hello'' with keys a=7, b=4
-        \item Decrypt the string ``q4zajep'' with the same keys
+        \item \mbox{Encrypt the string ``hello'' with keys a=7, b=4 \mrk{1}}
+        \item \mbox{Decrypt the string ``q4zajep'' with the same keys \mrk{1}}
     \end{enumerate}
 
 \subsection{}
@@ -201,9 +215,9 @@
     Assume $p = 23$, $g = 7$. Alice generates a public key $A = 11$ using the following formula: $A = g^a \mod p$, where $A$ is the public key and $a$ is a private key.
 
     \begin{enumerate}
-        \item Find a value for Alice’s private key by brute force
-        \item You pick a private key $b = 11$. Calculate your public key, $B = g^b \mod p$
-        \item A shared secret $s$ can be calculated with the formula $s = A^b \mod p$, where $A$ is Alice’s public key, and $b$ is your private key. Find $s$.
+        \item \mbox{Find a value for Alice’s private key by brute force \mrk{1}}
+        \item You pick a private key $b = 11$. Calculate your public key, $B = g^b \mod p$ \mrk{1}
+        \item A shared secret $s$ can be calculated with the formula $s = A^b \mod p$, where $A$ is Alice’s public key, and $b$ is your private key. Find $s$. \mrk{1}
     \end{enumerate}
 
 \subsection{}
@@ -211,13 +225,13 @@
     The following strings have been encrypted using the function $E(X_i) = (X + k + i) \mod 26$, where $i$ is the 1-based index of the character in the word to encrypt (ignoring spaces). For each, give a value for $k$.
 
     \begin{enumerate}
-        \item ``kxbcqph'' (The first letter of plaintext is `c' )
-        \item ``lacn ep gs'' (The plaintext is a sentence)
+        \item \mbox{``kxbcqph'' (The first letter of plaintext is `c' ) \mrk{1}}
+        \item ``lacn ep gs'' (The plaintext is a sentence) \mrk{1}
     \end{enumerate}
 
 \subsection{}
 
-VCKIVHH GSV UFMXGRLM FHVW GL VMXIBKG GSRH GVCG FHRMT Z ULINFOZ
+VCKIVHH GSV UFMXGRLM FHVW GL VMXIBKG GSRH GVCG FHRMT Z ULINFOZ \mrk{2}
 
 \clearpage
 \section{Number Systems}
@@ -227,10 +241,10 @@ VCKIVHH GSV UFMXGRLM FHVW GL VMXIBKG GSRH GVCG FHRMT Z ULINFOZ
     Convert all the following values into each of: Binary, Octal, Decimal, and Hexadecimal
 
     \begin{enumerate}
-        \item $ ( 01100011 )_2 $
-        \item $ ( 0257)_8 $
-        \item $ ( 611 )_{10} $
-        \item $ ( 19\text{F} )_{16} $
+        \item $ ( 01100011 )_2 $ \mrk{1}
+        \item $ ( 0257)_8 $ \mrk{1}
+        \item $ ( 611 )_{10} $ \mrk{1}
+        \item $ ( 19\text{F} )_{16} $ \mrk{1}
     \end{enumerate}
 
 \subsection{}
@@ -238,13 +252,13 @@ VCKIVHH GSV UFMXGRLM FHVW GL VMXIBKG GSRH GVCG FHRMT Z ULINFOZ
     Answer the following binary arithmetic questions. All numbers given are in binary. Representations use the number of bits shown. Give your answers in binary.
 
     \begin{enumerate}
-        \item $0101011 + 1101011$
-        \item $1101 - 1011$
-        \item $00010100 - 10101000$
-        \item $1101 \times 1010$
-        \item $11101001 \times 00101001$
-        \item $01001011 \div 00010111$ (report both quotient and remainder)
-        \item $1011\div 0101$ (report both quotient and remainder)
+        \item $0101011 + 1101011$ \mrk{1}
+        \item $1101 - 1011$ \mrk{1}
+        \item $00010100 - 10101000$ \mrk{1}
+        \item $1101 \times 1010$ \mrk{1}
+        \item $11101001 \times 00101001$ \mrk{1}
+        \item $01001011 \div 00010111$ (report both quotient and remainder) \mrk{1}
+        \item $1011\div 0101$ (report both quotient and remainder) \mrk{1}
     \end{enumerate}
 
 \subsection{}
@@ -252,9 +266,9 @@ VCKIVHH GSV UFMXGRLM FHVW GL VMXIBKG GSRH GVCG FHRMT Z ULINFOZ
     Give the Two’s Complement for each of the following 8-bit binary numbers
         
     \begin{enumerate}
-        \item 10000000
-        \item 10100111
-        \item 01101011
+        \item 10000000 \mrk{1}
+        \item 10100111 \mrk{1}
+        \item 01101011 \mrk{1}
     \end{enumerate}
 
 \subsection{}
@@ -262,9 +276,9 @@ VCKIVHH GSV UFMXGRLM FHVW GL VMXIBKG GSRH GVCG FHRMT Z ULINFOZ
     Calculate the answers to the following, working with 8-bit signed binary numbers \textbf{stored as sign and magnitude}
 
     \begin{enumerate}
-        \item What is the additive inverse of $01101111$?
-        \item $00110001 + 11001101$
-        \item $10010101 - 00101010$
+        \item What is the additive inverse of $01101111$? \mrk{1}
+        \item $00110001 + 11001101$ \mrk{1}
+        \item $10010101 - 00101010$ \mrk{1}
     \end{enumerate}
 
 \subsection{}
@@ -272,9 +286,9 @@ VCKIVHH GSV UFMXGRLM FHVW GL VMXIBKG GSRH GVCG FHRMT Z ULINFOZ
    Give the greatest common divisor for each of the following pairs of numbers.
 
   \begin{enumerate}
-       \item $(3, 7)$
-       \item $(14, 39)$
-       \item $(11, 23)$
+       \item $(3, 7)$ \mrk{1}
+       \item $(14, 39)$ \mrk{1}
+       \item $(11, 23)$ \mrk{1}
    \end{enumerate}
 
 \subsection{}
@@ -282,22 +296,22 @@ VCKIVHH GSV UFMXGRLM FHVW GL VMXIBKG GSRH GVCG FHRMT Z ULINFOZ
     What is the radix complement of the following numbers (assuming representation with the number of digits shown)?
 
     \begin{enumerate}
-        \item $(52342)_{10}$
-        \item $(00231)_{4}$
-        \item $(01\text{FA})_{16}$
+        \item $(52342)_{10}$ \mrk{1}
+        \item $(00231)_{4}$ \mrk{1}
+        \item $(01\text{FA})_{16}$ \mrk{1}
     \end{enumerate}
 
 \subsection{}
 
-    Assume base 32 is written with the alphabet [0-9A-V] Convert $(321223123212)_4$ into base 32
+    Assume base 32 is written with the alphabet [0-9A-V] Convert $(321223123212)_4$ into base 32 \mrk{1}
 
 \subsection{}
 
-    A 23 digit number in base 536 can store how many different values?
+    A 23 digit number in base 536 can store how many different values? \mrk{1}
 
 \subsection{}
 
-    A web application needs to encode session ids in as few characters as possible. It can safely use numbers and upper and lowercase letters. What is the smallest number of characters that can encode the id 2348923947234?
+    A web application needs to encode session ids in as few characters as possible. It can safely use numbers and upper and lowercase letters. What is the smallest number of characters that can encode the id 2348923947234? \mrk{1}
 
 \clearpage
 \section{Sequences and Summation}
@@ -307,9 +321,9 @@ VCKIVHH GSV UFMXGRLM FHVW GL VMXIBKG GSRH GVCG FHRMT Z ULINFOZ
     For each of the following, state whether the sequence is arithmetic or geometric, and give the next 3 values in the sequence
 
     \begin{enumerate}
-        \item 1, 7, 13
-        \item 0.9, 0.6, 0.4
-        \item 2k, 6k, 18k
+        \item 1, 7, 13 \mrk{1}
+        \item 0.9, 0.6, 0.4 \mrk{1}
+        \item 2k, 6k, 18k \mrk{1}
     \end{enumerate}
 
 \subsection{}
@@ -317,10 +331,10 @@ VCKIVHH GSV UFMXGRLM FHVW GL VMXIBKG GSRH GVCG FHRMT Z ULINFOZ
     Give the first 5 elements of the following sequences:
 
     \begin{enumerate}
-        \item $ \{ \frac{n^2}{n-1} \}^\infty_{n=1} $
-        \item $ \{ i^3 \}^\infty_{i=3} $
-        \item $ a_n = a_{n-1} + 3 $ where $a_1 = 22$
-        \item $ a_n = 14 \times 3^{n-1} $
+        \item $ \{ \frac{n^2}{n-1} \}^\infty_{n=1} $ \mrk{1}
+        \item $ \{ i^3 \}^\infty_{i=3} $ \mrk{1}
+        \item $ a_n = a_{n-1} + 3 $ where $a_1 = 22$ \mrk{1}
+        \item $ a_n = 14 \times 3^{n-1} $ \mrk{1}
     \end{enumerate}
 
 \subsection{}
@@ -328,9 +342,9 @@ VCKIVHH GSV UFMXGRLM FHVW GL VMXIBKG GSRH GVCG FHRMT Z ULINFOZ
     A geometric sequence has 10 terms and a common ratio of $\frac{1}{10}$ and it's final term is ${10^{-8}}$.
 
     \begin{enumerate}
-        \item Is this sequence increasing, decreasing, monotonic, and/or bounded? (List all that apply)
-        \item Is -10 a lower bound for this sequence?
-        \item Is 1 an upper bound for this sequence?
+        \item Is this sequence increasing, decreasing, monotonic, and/or bounded? (List all that apply) \mrk{1}
+        \item Is -10 a lower bound for this sequence? \mrk{1}
+        \item Is 1 an upper bound for this sequence? \mrk{1}
     \end{enumerate}
 
 \subsection{}
@@ -338,10 +352,10 @@ VCKIVHH GSV UFMXGRLM FHVW GL VMXIBKG GSRH GVCG FHRMT Z ULINFOZ
     Solve the following summations
 
     \begin{enumerate}
-        \item $ \sum_{i=1}^{5} 2 $
-        \item $ \sum_{i=4}^{7} i $
-        \item $ \sum_{i=1}^{3} 2^i $
-        \item $ \sum A $ where $ A = \{ n^2 \}^{7}_{n=1} $
+        \item $ \sum_{i=1}^{5} 2 $ \mrk{1}
+        \item $ \sum_{i=4}^{7} i $ \mrk{1}
+        \item $ \sum_{i=1}^{3} 2^i $ \mrk{1}
+        \item $ \sum A $ where $ A = \{ n^2 \}^{7}_{n=1} $ \mrk{1}
     \end{enumerate}
 
 \subsection{}
@@ -349,9 +363,9 @@ VCKIVHH GSV UFMXGRLM FHVW GL VMXIBKG GSRH GVCG FHRMT Z ULINFOZ
     Solve the following products
 
     \begin{enumerate}
-        \item $ \prod_{k=1}^{3} (2k + 1) $
-        \item $ \prod_{k=7}^{17} 2 $
-        \item $ \prod A $ where $ A = \{ \frac{1}{k} \}^{4}_{k=1} $
+        \item $ \prod_{k=1}^{3} (2k + 1) $ \mrk{1}
+        \item $ \prod_{k=7}^{17} 2 $ \mrk{1}
+        \item $ \prod A $ where $ A = \{ \frac{1}{k} \}^{4}_{k=1} $ \mrk{1}
     \end{enumerate}
 
 \subsection{}
@@ -359,9 +373,9 @@ VCKIVHH GSV UFMXGRLM FHVW GL VMXIBKG GSRH GVCG FHRMT Z ULINFOZ
     Consider the sequence $S = \{ \frac{n}{n+1} \}^\infty_{n=1} $
 
     \begin{enumerate}
-        \item Give a lower bound for this sequence that is also in this sequence.
-        \item What is a number that this sequence will approach, but never quite reach?
-        \item Is this sequence increasing, decreasing, monotonic, and/or bounded? (List all that apply)
+        \item Give a lower bound for this sequence that is also in this sequence. \mrk{1}
+        \item What is a number that this sequence will approach, but never quite reach? \mrk{1}
+        \item Is this sequence increasing, decreasing, monotonic, and/or bounded? (List all that apply) \mrk{1}
     \end{enumerate}
 
 \subsection{}
@@ -369,11 +383,11 @@ VCKIVHH GSV UFMXGRLM FHVW GL VMXIBKG GSRH GVCG FHRMT Z ULINFOZ
 Simplify the following summations
 
 \begin{enumerate}
-    \item $ \sum_{i=1}^{n} c $
-    \item $ \sum_{i=1}^{n} ( i + 2 ) $
-    \item $ \sum_{i=1}^{n} ( i^2 + 3i ) $
-    \item $ \sum_{i=1}^{n} \sum_{j=1}^{i} j $
-    \item $ \sum_{i=1}^{n} A_i $ where $ A_n = A_{n-1} + \frac{1}{2} $ and $ A_1 = \frac{1}{2} $
+    \item $ \sum_{i=1}^{n} c $ \mrk{1}
+    \item $ \sum_{i=1}^{n} ( i + 2 ) $ \mrk{1}
+    \item $ \sum_{i=1}^{n} ( i^2 + 3i ) $ \mrk{1}
+    \item $ \sum_{i=1}^{n} \sum_{j=1}^{i} j $ \mrk{1}
+    \item $ \sum_{i=1}^{n} A_i $ where $ A_n = A_{n-1} + \frac{1}{2} $ and $ A_1 = \frac{1}{2} $ \mrk{1}
 \end{enumerate}
 
 
@@ -385,11 +399,11 @@ Simplify the following summations
 When $p$ is true and $q$ is false, state whether the following statements are true or false
 
 \begin{enumerate}
-    \item $\neg \neg \neg q$
-    \item $(p \wedge q) \vee p$
-    \item $(p \vee \neg q) \implies p$
-    \item $q \implies (p \Longleftrightarrow q)$
-    \item $p \wedge q \Longleftrightarrow \neg p \vee q$
+    \item $\neg \neg \neg q$ \mrk{1}
+    \item $(p \wedge q) \vee p$ \mrk{1}
+    \item $(p \vee \neg q) \implies p$ \mrk{1}
+    \item $q \implies (p \Longleftrightarrow q)$ \mrk{1}
+    \item $p \wedge q \Longleftrightarrow \neg p \vee q$ \mrk{1}
 \end{enumerate}
 
 \subsection{}
@@ -397,10 +411,10 @@ When $p$ is true and $q$ is false, state whether the following statements are tr
 Let $p$ be a true proposition and $q$ be any proposition. Which of the following are true, and which of the following are false? (others might be true or false)
 
 \begin{enumerate}
-    \item $p \implies q$
-    \item $q \implies p$
-    \item $\neg q \implies p$
-    \item $\neg p \implies q$
+    \item $p \implies q$ \mrk{1}
+    \item $q \implies p$ \mrk{1}
+    \item $\neg q \implies p$ \mrk{1}
+    \item $\neg p \implies q$ \mrk{1}
 \end{enumerate}
 
 \subsection{}
@@ -408,8 +422,8 @@ Let $p$ be a true proposition and $q$ be any proposition. Which of the following
 Construct a truth table for each of the following. For each, state whether the statement is always true, or if not give a case where it is false.
 
 \begin{enumerate}
-    \item $ p \implies (q \implies ( r \implies p )) $
-    \item $ p \vee \neg r \implies (\neg ( r \wedge p ) $
+    \item $ p \implies (q \implies ( r \implies p )) $ \mrk{2}
+    \item $ p \vee \neg r \implies (\neg ( r \wedge p ) $ \mrk{2}
 \end{enumerate}
 
 \subsection{}
@@ -417,8 +431,8 @@ Construct a truth table for each of the following. For each, state whether the s
 Identify the atomic propositions in the following sentences and assign them each a letter (e.g. b = ``the bus is late'') Then express this as a statement of propositional logic using the notation taught in class
 
 \begin{enumerate}
-    \item If my bike is not working or the bus is late, then I am late for class
-    \item I am happy if and only if I am riding my bike
+    \item If my bike is not working or the bus is late, then I am late for class \mrk{2}
+    \item I am happy if and only if I am riding my bike \mrk{2}
 \end{enumerate}
 
 \subsection{}
@@ -426,10 +440,10 @@ Identify the atomic propositions in the following sentences and assign them each
 For the following, state whether they are tautologies, contraditions, or contingiencies
 
 \begin{enumerate}
-    \item $p \implies (\neg p \vee p)$
-    \item $p \vee q \implies p \wedge q$
-    \item $\neg p \vee \neg\neg p$
-    \item $p \vee \neg (p \vee \neg p) $
+    \item $p \implies (\neg p \vee p)$ \mrk{1}
+    \item $p \vee q \implies p \wedge q$ \mrk{1}
+    \item $\neg p \vee \neg\neg p$ \mrk{1}
+    \item $p \vee \neg (p \vee \neg p) $ \mrk{1}
 \end{enumerate}
 
 
@@ -438,9 +452,9 @@ For the following, state whether they are tautologies, contraditions, or conting
 Do the following properties hold of implication? You may wish to use either a truth table or Equational Reasoning to arrive at your answer.
 
 \begin{enumerate}
-    \item Implication distributes over conjunction $$ (p \implies (q \wedge r)) \Longleftrightarrow (p \implies q) \wedge (p \implies r) $$
-    \item Implication distributes over disjunction $$ (p \implies (q \vee r)) \Longleftrightarrow (p \implies q) \vee (p \implies r) $$
-    \item Implication distributes over implication $$ (p \implies (q \implies r)) \Leftrightarrow (p \implies q) \implies (p \implies r) $$
+    \item Implication distributes over conjunction $$ (p \implies (q \wedge r)) \Longleftrightarrow (p \implies q) \wedge (p \implies r) $$ \mrk{1}
+    \item Implication distributes over disjunction $$ (p \implies (q \vee r)) \Longleftrightarrow (p \implies q) \vee (p \implies r) $$ \mrk{1}
+    \item Implication distributes over implication $$ (p \implies (q \implies r)) \Leftrightarrow (p \implies q) \implies (p \implies r) $$ \mrk{1}
 \end{enumerate}
 
 \subsection{}
@@ -448,12 +462,11 @@ Do the following properties hold of implication? You may wish to use either a tr
 Prove the following by Equational Reasoning. Format your proof as in the lecture slides
 
 \begin{enumerate}
-    \item $p \implies (p \vee \neg p)$
-    \item $\neg p \wedge \text{true} \Longleftrightarrow \neg p$
+    \item $p \implies (p \vee \neg p)$ \mrk{2}
+    \item $\neg p \wedge \text{true} \Longleftrightarrow \neg p$ \mrk{2}
 \end{enumerate}
 
 For this, use only the laws given in the lecture slides and the handout.
-
 
 \clearpage
 \section{Set Theory}
@@ -463,9 +476,9 @@ For this, use only the laws given in the lecture slides and the handout.
     Define the following sets by extension
 
     \begin{enumerate}
-        \item The set of natural numbers between 6 and 11 (not inclusive)
-        \item The set of letters in the phrase ``formal systems, logic, and semantics''
-        \item The set of sets with exactly one subset
+        \item The set of natural numbers between 6 and 11 (not inclusive) \mrk{1}
+        \item The set of letters in the phrase ``formal systems, logic, and semantics'' \mrk{1}
+        \item The set of sets with exactly one subset \mrk{1}
     \end{enumerate}
 
 \subsection{}
@@ -473,12 +486,12 @@ For this, use only the laws given in the lecture slides and the handout.
     State whether each of the following is a singleton, the empty set, or neither of these
 
     \begin{enumerate}
-        \item The set of Real numbers, less the Natural numbers
-        \item The set of even primes
-        \item The set of digits used in binary
-        \item The set black hearts in a standard deck of cards
-        \item A set that has no proper subsets
-        \item A set with exactly two subsets
+        \item The set of Real numbers, less the Natural numbers \mrk{1}
+        \item The set of even primes \mrk{1}
+        \item The set of digits used in binary \mrk{1}
+        \item The set black hearts in a standard deck of cards \mrk{1}
+        \item A set that has no proper subsets \mrk{1}
+        \item A set with exactly two subsets \mrk{1}
     \end{enumerate}
 
 \subsection{}
@@ -486,11 +499,11 @@ For this, use only the laws given in the lecture slides and the handout.
     Give the extension of the following sets
 
     \begin{enumerate}
-        \item $\{ a, b, c \} \cap \{ c, d \} $
-        \item $\{ a, c \} \cup \{ b, c, d \} $
-        \item $\{ a, b, c \} \setminus \{ b, c, d \} $
-        \item $\{ a \} \cap ( \{ b \} \cup \{a, b, c\} ) $
-        \item $ (\{ c \} \cup \{ b \} \cup \{a\}) \cap ( \{b, c, a\} \cup \emptyset ) $
+        \item $\{ a, b, c \} \cap \{ c, d \} $ \mrk{1}
+        \item $\{ a, c \} \cup \{ b, c, d \} $ \mrk{1}
+        \item $\{ a, b, c \} \setminus \{ b, c, d \} $ \mrk{1}
+        \item $\{ a \} \cap ( \{ b \} \cup \{a, b, c\} ) $ \mrk{1}
+        \item $ (\{ c \} \cup \{ b \} \cup \{a\}) \cap ( \{b, c, a\} \cup \emptyset ) $ \mrk{1}
     \end{enumerate}
 
 \subsection{}
@@ -504,11 +517,11 @@ For this, use only the laws given in the lecture slides and the handout.
     $ C = \{ c \} $
 
     \begin{enumerate}
-        \item $ A \supset C $
-        \item $ (C \cup A) \subseteq B $
-        \item $ c \in ( A \cap B ) $
-        \item $ a \not \in ( A \setminus B ) $
-        \item $(B \cap \{d, a\} ) \supseteq B$
+        \item $ A \supset C $ \mrk{1}
+        \item $ (C \cup A) \subseteq B $ \mrk{1}
+        \item $ c \in ( A \cap B ) $ \mrk{1}
+        \item $ a \not \in ( A \setminus B ) $ \mrk{1}
+        \item $(B \cap \{d, a\} ) \supseteq B$ \mrk{1}
     \end{enumerate}
 
 \subsection{}
@@ -522,9 +535,9 @@ For this, use only the laws given in the lecture slides and the handout.
     $ C = \{ c \} $
 
     \begin{enumerate}
-        \item $ (A \setminus B) \cap C$
-        \item $ ( B \cap C ) \cup A $
-        \item $ C \cup (A \setminus (B \cap A)) $
+        \item $ (A \setminus B) \cap C$ \mrk{1}
+        \item $ ( B \cap C ) \cup A $ \mrk{1}
+        \item $ C \cup (A \setminus (B \cap A)) $ \mrk{1}
     \end{enumerate}
 
 \subsection{}
@@ -532,16 +545,14 @@ For this, use only the laws given in the lecture slides and the handout.
 Use equational reasoning to prove the following. Reference the laws of set theory and propositional logic introduced in the lectures and on the handout.
 
 \begin{enumerate}
-    \item $S \subseteq (T \cup (S \cap S)) $
-    \item $ (S = T) \wedge (T \not\subseteq S) \Longleftrightarrow \text{false} $
-    \item $ \emptyset \not\subset ((S \cap S) \setminus (S \setminus \emptyset)) $
+    \item $S \subseteq (T \cup (S \cap S)) $ \mrk{2}
+    \item $ (S = T) \wedge (T \not\subseteq S) \Longleftrightarrow \text{false} $ \mrk{2}
+    \item $ \emptyset \not\subset ((S \cap S) \setminus (S \setminus \emptyset)) $ \mrk{2}
 \end{enumerate}
 
 \clearpage
-\section{Reading Week}
-    
-
-\clearpage
+\setcounter{page}{8}
+\setcounter{section}{7}
 \section{Set Theory 2}
 
 \subsection{}
@@ -550,12 +561,12 @@ Use equational reasoning to prove the following. Reference the laws of set theor
 
     \begin{multicols}{2}
     \begin{enumerate}
-        \item $\{ 7, 8, 8\}$
-        \item $\bigcap \{ A, B, C \} $
-        \item $\mathbb{P}(\{ a, b, c\})$
-        \item $\mathbb{N}^0 \setminus \mathbb{N}^+$
-        \item $\mathbb{Q} \setminus \mathbb{R}$
-        \item $\bigcup \{ A, B, C \} $
+        \item $\{ 7, 8, 8\}$ \mrk{1}
+        \item $\bigcap \{ A, B, C \} $ \mrk{1}
+        \item $\mathbb{P}(\{ a, b, c\})$ \mrk{1}
+        \item $\mathbb{N}^0 \setminus \mathbb{N}^+$ \mrk{1}
+        \item $\mathbb{Q} \setminus \mathbb{R}$ \mrk{1}
+        \item $\bigcup \{ A, B, C \} $ \mrk{1}
     \end{enumerate}
 \end{multicols}
 
@@ -575,12 +586,12 @@ Use equational reasoning to prove the following. Reference the laws of set theor
 \end{multicols}
 \begin{multicols}{2}
     \begin{enumerate}
-        \item $ A \cup B $
-        \item $ \mathbb{P}(A \setminus B)$
-        \item $ C \cap A $
-        \item $ B \cup C $
-        \item $ A \times B $
-        \item $ B \setminus C$
+        \item $ A \cup B $ \mrk{1}
+        \item $ \mathbb{P}(A \setminus B)$ \mrk{1}
+        \item $ C \cap A $ \mrk{1}
+        \item $ B \cup C $ \mrk{1}
+        \item $ A \times B $ \mrk{1}
+        \item $ B \setminus C$ \mrk{1}
     \end{enumerate}
 \end{multicols}
 
@@ -590,10 +601,10 @@ Use equational reasoning to prove the following. Reference the laws of set theor
 
     \begin{multicols}{2}
         \begin{enumerate}
-            \item $\mathbb{P}(A)$
-            \item $ \bigcup  \mathbb{P}(B)  $
-            \item $ \{a, b\} \times A $
-            \item $ \mathbb{P} ( \emptyset ) $
+            \item $\mathbb{P}(A)$ \mrk{1}
+            \item $ \bigcup  \mathbb{P}(B)  $ \mrk{1}
+            \item $ \{a, b\} \times A $ \mrk{1}
+            \item $ \mathbb{P} ( \emptyset ) $ \mrk{1}
         \end{enumerate}
     \end{multicols}
     \begin{enumerate}
@@ -607,11 +618,11 @@ Use equational reasoning to prove the following. Reference the laws of set theor
     Give the extension of the following sets
 
     \begin{enumerate}
-        \item $\{ n : \mathbb{N} \mid n \mod 3 = 1 \wedge n < 13 \} $
-        \item $\{ n : \mathbb{N} \mid 4 < n < 7 \} $
-        \item $ \{ n : \mathbb{N} \bullet n \mod 7 \} $
-        \item $\{ a : \mathbb{R}; b : \mathbb{R}  \mid a^2 = b \wedge b^2 = a \bullet a \} $
-        \item $\{ a : \mathbb{N}^+; b : \mathbb{N}^+  \mid a + b < 3 \bullet (a, b) \} $
+        \item $\{ n : \mathbb{N} \mid n \mod 3 = 1 \wedge n < 13 \} $ \mrk{1}
+        \item $\{ n : \mathbb{N} \mid 4 < n < 7 \} $ \mrk{1}
+        \item $ \{ n : \mathbb{N} \bullet n \mod 7 \} $ \mrk{1}
+        \item $\{ a : \mathbb{R}; b : \mathbb{R}  \mid a^2 = b \wedge b^2 = a \bullet a \} $ \mrk{1}
+        \item $\{ a : \mathbb{N}^+; b : \mathbb{N}^+  \mid a + b < 3 \bullet (a, b) \} $ \mrk{1}
     \end{enumerate}
 
 
@@ -620,9 +631,9 @@ Use equational reasoning to prove the following. Reference the laws of set theor
     Define by extension the set containing the smallest four elements of the following sets:
 
     \begin{enumerate}
-        \item $ \{ n : \mathbb{N}^+ \bullet n^n \} $
-        \item $ \{ n : \mathbb{N}^+ \bullet \frac{n}{n+1} \} $
-        \item $ \{ n : \mathbb{Z} \mid n^2 \leq 16  \} $
+        \item $ \{ n : \mathbb{N}^+ \bullet n^n \} $ \mrk{1}
+        \item $ \{ n : \mathbb{N}^+ \bullet \frac{n}{n+1} \} $ \mrk{1}
+        \item $ \{ n : \mathbb{Z} \mid n^2 \leq 16  \} $ \mrk{1}
     \end{enumerate}
 
 \subsection{}
@@ -644,10 +655,10 @@ Use equational reasoning to prove the following. Reference the laws of set theor
     \end{table}
 
     \begin{enumerate}
-        \item $ \{ x : Group \times Name \mid \text{ true} \} $
-        \item $ \{ x : Name \times Age \mid x.2 \ge 18 \bullet x.1 \} $
-        \item $ \{ x : Name \times Age \times Group \mid x.3 = A \} $
-        \item $ \{ a : Name \times Group; b : Name \times Group \mid a.2 = b.2 \bullet \{a.1, b.1\} \} $
+        \item $ \{ x : Group \times Name \mid \text{ true} \} $ \mrk{1}
+        \item $ \{ x : Name \times Age \mid x.2 \ge 18 \bullet x.1 \} $ \mrk{1}
+        \item $ \{ x : Name \times Age \times Group \mid x.3 = A \} $ \mrk{1}
+        \item $ \{ a : Name \times Group; b : Name \times Group \mid a.2 = b.2 \bullet \{a.1, b.1\} \} $ \mrk{1}
     \end{enumerate} 
 
 \subsection{}
@@ -655,10 +666,10 @@ Use equational reasoning to prove the following. Reference the laws of set theor
     For the table given above, define the following sets by set comprehension:
 
     \begin{enumerate}
-        \item The set of all names
-        \item The set of groups containing someone under the age of 18
-        \item The set of Name, Age tuples for someone whose age is a multiple of 3
-        \item The set of Name, Age, Group tuples for everyone who isn't called Alice 
+        \item The set of all names \mrk{2}
+        \item The set of groups containing someone under the age of 18 \mrk{2}
+        \item The set of Name, Age tuples for someone whose age is a multiple of 3 \mrk{2}
+        \item The set of Name, Age, Group tuples for everyone who isn't called Alice  \mrk{2}
     \end{enumerate}
 
 \clearpage
@@ -687,14 +698,13 @@ Use equational reasoning to prove the following. Reference the laws of set theor
     \end{figure}
 
     \begin{enumerate}
-        \item Is it directed, connected, and/or cyclic?
-        \item List source, sink, and tranfer nodes as sets
-        \item Give the min. and max. degree of the graph
-        \item What is the degree of node 4?
-        \item List the loops in this graph as a set
-        \item Write a simple cycle in this graph as a list
-        \item Write a simple path that connects every node in this graph as a list
-        \item Write a shortest path connecting every even-numbered node as a list
+        \item Is it directed, connected, and/or cyclic? \mrk{1}
+        \item Give the min. and max. degree of the graph \mrk{1}
+        \item What is the degree of node 4? \mrk{1}
+        \item List the loops in this graph as a set \mrk{1}
+        \item Write a simple cycle in this graph as a list \mrk{1}
+        \item Write a simple path that connects every node in this graph as a list \mrk{1}
+        \item Write a shortest path connecting every even-numbered node as a list \mrk{1}
     \end{enumerate}
 
 
@@ -703,9 +713,9 @@ Use equational reasoning to prove the following. Reference the laws of set theor
     A graph G is defined as $G = \{V, E\}$, where $V = \{ a, b, c \}$, and $E = V \times V$
 
     \begin{enumerate}
-        \item Is it directed, connected, and/or cyclic?
-        \item How many nodes and edges does it contain?
-        \item Give the min. and max. degree of the graph
+        \item Is it directed, connected, and/or cyclic? \mrk{1}
+        \item How many nodes and edges does it contain? \mrk{1}
+        \item Give the min. and max. degree of the graph \mrk{1}
     \end{enumerate}
 
 \subsection{}
@@ -718,7 +728,7 @@ Use equational reasoning to prove the following. Reference the laws of set theor
     \end{itemize} 
 
     \begin{enumerate}
-        \item Draw a graph of the first 5 unique strings that can be constructed in this system, where edges represent applications of one of the  grammatical rules
+        \item Draw a graph of the first 5 unique strings that can be constructed in this system, where edges represent applications of one of the  grammatical rules \mrk{1}
     \end{enumerate}
 
 
@@ -743,10 +753,10 @@ Use equational reasoning to prove the following. Reference the laws of set theor
     We can produce a graph of this social network $ G = ( V, E)$ where $ V = \{ x : \text{Username} \mid \text{true} \}$, and E is a set of directed edges (a, b) where A `follows' B.
 
     \begin{enumerate}
-        \item Give an extensional definition of E
-        \item Give an intensional definition of E using set comprehension
-        \item List of followers: Give a set comprehension that returns a tuple (a, b), where a is a username and b is a person following that user
-        \item Follow recommendation: Give a set comprehension that returns a tuple (a, b), where $a$ is a username and $b$ is a username of someone $a$ might like to follow ($a$ might `like to follow' $b$ if and only if $b$ is followed by someone $a$ follows, $a$ does not already follow them, and $a$ and $b$ are not the same person).
+        \item Give an extensional definition of E \mrk{1}
+        \item Give an intensional definition of E using set comprehension \mrk{2}
+        \item List of followers: Give a set comprehension that returns a tuple (a, b), where a is a username and b is a person following that user \mrk{2}
+        \item Follow recommendation: Give a set comprehension that returns a tuple (a, b), where $a$ is a username and $b$ is a username of someone $a$ might like to follow ($a$ might `like to follow' $b$ if and only if $b$ is followed by someone $a$ follows, $a$ does not already follow them, and $a$ and $b$ are not the same person). \mrk{2}
     \end{enumerate}
 
 
@@ -755,22 +765,34 @@ Use equational reasoning to prove the following. Reference the laws of set theor
 
 \subsection{}
 
-    You have 3 fair six-sided dice. What is the probability of
+    You have 3 fair six-sided dice. What is the probability of rolling
 
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item 3 sixes \mrk{1}
+            \item At least 2 sixes \mrk{1}
+        \end{enumerate}
+    \end{multicols}
     \begin{enumerate}
-        \item Rolling 3 sixes
-        \item Rolling at least 2 sixes
+        \setcounter{enumi}{2}
+        \item An ascending sequence $\{ n, n+1, n+2 \}$ in order (e.g. 1,2,3 or 3,4,5) \mrk{1}
     \end{enumerate}
+
 
 \subsection{}
 
-    Let $P(A) = 0.25$, $P(B) = 0.5$, and $P(C) = 0.75$. You know that events B and C are independant, and that $P(A \mid B ) = 0.7 $. Calculate the following
-
-    \begin{enumerate}
-        \item $P(A \cap B)$
-        \item $P(B \cup A)$
-        \item $P(B \cup C)$
-    \end{enumerate}
+    Let $P(A) = 0.25$, $P(B) = 0.5$, and $P(C) = 0.75$. You know that events B and C are independent, and that $P(A \mid B ) = 0.7 $. Calculate the following
+    
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item $P(A \cap B)$ \mrk{1}
+            \item $P(B \cup A)$ \mrk{1}
+            \item $P(B \cup C)$ \mrk{1}
+            \item $P(A')$ \mrk{1}
+            \item $P(C \mid B)$ \mrk{1}
+            \item $P(B \mid A)$ \mrk{1}
+        \end{enumerate}
+    \end{multicols}
 
 \subsection{}
 
@@ -778,33 +800,27 @@ Use equational reasoning to prove the following. Reference the laws of set theor
 
     \begin{multicols}{2}
         \begin{enumerate}
-            \item $ 4! $
-            \item $ 0! $
-            \item $ ^4P_3 $
-            \item $ ^{34}P_{23} $
-            \item $ ^{11}C_{11} $
-            \item $ ^{15}C_{7} $
+            \item $ 4! $ \mrk{1}
+            \item $ 0! $ \mrk{1}
+            \item $ ^4P_3 $ \mrk{1}
+            \item $ ^{8}C_{7} $ \mrk{1}
         \end{enumerate}
     \end{multicols}
 
 \subsection{}
 
     \begin{enumerate}
-        \item How many combinations of four 8-bit binary numbers are possible?
-        \item I define an ordering over the set \{a, b, c, d\}. How many possible orderings can I define?
+        \item How many combinations of four unique 8-bit binary numbers are possible? \mrk{1}
+        \item I define an ordering over the set \{a, b, c, d\}. How many possible orderings can I define? \mrk{1}
+        \item A industrial robot is designed to carry 4 objects simultaneously. Each object is carried by one of 4 differently positioned and proporitioned arms. Each object can be in one of 6 weight categories. To exhaustively test that the robot will never overbalance on any set of weights, how many tests must be run? \mrk{1}
     \end{enumerate}
 
 \subsection{}
 
-    $A_1$, and $A_2$ partition a probability space. $B_1, B_2,$ and $B_3$ partition the event $A_1$
-
-    There is an event C, such that $P(C) = \frac{1}{2}$, and $P(C \mid A_2) = 0$
+    $A_1$, and $A_2$ partition a probability space. $B_1, B_2,$ and $B_3$ partition the event $A_1$. There is an event C, such that $P(C) = \frac{1}{2}$, and $P(C \mid A_2) = 0$
     
-    There is an event D with 4 outcomes in $B_1$, 3 outcomes in $B_2$, and 0 outcomes in $B_3$. You know that $P (D \mid A_1 = \frac{1}{4})$
-
     \begin{enumerate}
-        \item What is $\sum_{i=1}^3 P(C \mid B_i) $ ?
-        \item What is $P(D \mid A_2)$
+        \item What is $\sum_{i=1}^3 P(C \mid B_i) $ ? \mrk{1}
     \end{enumerate}
     
 \subsection{}
@@ -824,17 +840,12 @@ Use equational reasoning to prove the following. Reference the laws of set theor
         \end{tabular}
     \end{table}
 
-    You pick a bag at random and pick a random ball from that bag. What is the probability that you pick a red ball?
+    You pick a bag at random and pick a random ball from that bag. What is the probability that you pick a red ball? \mrk{1}
 
 \subsection{}
 
-    What is the liklihood that a student who passed their exam attended lectures?
-
-    \begin{itemize}
-        \item 80\% of students attend lectures
-        \item 80\% of students pass their exam
-        \item Of those who attend lectures, 95\% pass their exam
-    \end{itemize}
+    What is the probability that a student who passed their exam attended lectures, given: 80\% of students attend lectures; 80\% of students pass their exam; and of those who attend lectures, 95\% pass their exam
+\mrk{1}
     
 \subsection{}
 
@@ -846,60 +857,109 @@ Use equational reasoning to prove the following. Reference the laws of set theor
             \toprule
             $H_n$ & $P(H_n)$ & $P(E \mid H_n)$ \\
             \midrule
-            $H_1$ & ${1}/{4}$ & ${3}/{4}$  \\
-            $H_2$ & ${1}/{3}$ & ${1}/{2}$  \\
-            $H_3$ & ${1}/{8}$ & ${2}/{7}$ \\
+            $H_1$ & ${3}/{8}$ & ${2}/{6}$  \\
+            $H_2$ & ${1}/{8}$ & ${2}/{6}$  \\
+            $H_3$ & ${4}/{8}$ & ${1}/{6}$ \\
             \bottomrule
         \end{tabular}
     \end{table}
 
-    Calculate posterior probabilities $P( H_n \mid E)$ for all three hypotheses.
+    Calculate posterior probabilities $P( H_n \mid E)$ for all three hypotheses. \mrk{3}
     
 
 \clearpage
+\setcounter{page}{12}
+\setcounter{section}{11}
 \section{Descriptive Statistics}
 
 \subsection{}
 
-    For the following types of data, say whether they are nominal, ordinal, or numeric, and give an appropriate measure of central tendancy to use to describe such data
+    For the following types of data, say whether they are nominal, ordinal, or numeric, and give the most appropriate measure of central tendancy to use to describe such data
 
     \begin{enumerate}
-        \item Duration of daily commute
-        \item Frequency in Hz
-        \item DEFCON level
-        \item Brands of espresso maker
+        \item Duration of daily commute \mrk{1}
+        \item Frequency in Hz \mrk{1}
+        \item DEFCON level\footnote{See \url{https://en.wikipedia.org/wiki/DEFCON}} \mrk{1}
+        \item Brands of espresso maker \mrk{1}
     \end{enumerate}
 
 \subsection{}
 
-    For the following data calculate the median and mode. Use Tukey's Fences with a value of $k=1.5$ to exclude outliers before calculating the mean.
+    For the following data calculate the median and mode(s). Use Tukey's Fences with a value of $k=1.5$ to exclude outliers before calculating the mean.
+
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item \mbox{4, 2, 5, 2, 34, 2, 4 \mrk{1}}
+            \item \mbox{1, 4, 6, 2, 4, 3, 1 \mrk{1}}
+        \end{enumerate}
+    \end{multicols}
+
+\subsection{}
+
+    The following data represents a sample of scores collected from two levels of a mobile game. For each, calculate the range, inter-quartile range, and an appropriate form of standard deviation.  
+
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item \mbox{1, 9, 3, 9, 23, 5, 3, 6 \mrk{1}}
+            \item \mbox{5, 2, 14, 25, 14, 11, 5 \mrk{1}}
+        \end{enumerate}
+    \end{multicols}
+
+    \subsection{}
+
+    What is the approximate correlation of the data shown? Pick the closest out of \mbox{$\{-1, -0.5, 0, 0.5, 1\}$ \mrk{1}}
+
+    \includegraphics[width=0.49\textwidth]{correlation}
+
+
+\subsection{}
+
+    8 bytes of data are transmitted over a noisy channel. For every bit transmitted, the probability of the bit being flipped (a transmission error) is $10^{-2}$. What is the chance that at least one error occours? \mrk{1}
+
+\subsection{}
+
+    The time taken to sort an array using Insertion Sort is $n(n+1)/2$, where n is the size of the array. You use Insertion Sort on 100 arrays which are uniformly distributed in length between 1 and 100 elements.
 
     \begin{enumerate}
-        \item 4, 2, 5, 2, 34, 2, 4
-        \item 1, 4, 6, 2, 4, 3, 1
+        \item What is the total time taken?  \mrk{1}
+        \item What is the mean time per array?  \mrk{1}
     \end{enumerate}
 
 \subsection{}
 
-    The following data represents a sample of scores collected from two levels of a mobile game. Calculate the range, inter-quartile range, and an appropriate form of standard deviation.  
+You flip an unfair coin 6 times. The probability of heads is $0.2$. The number of heads is given by the variable X.
 
-    \begin{enumerate}
-        \item 1, 52, 3, 53, 23, 5, 3, 6
-        \item 5, 2, 14, 25, 14, 11, 5
-    \end{enumerate}
-
-\subsection{}
-
-    What is the approximate correlation of the data shown? Pick the closest out of $\{-1, -0.5, 0, 0.5, 1\}$
-
-  %  \begin{enumerate}
-       \includegraphics[width=0.49\textwidth]{correlation}
-   %     %\item \includegraphics[width=0.49\textwidth]{nocorrelation}
-   % \end{enumerate}
+\begin{enumerate}
+    \item What is $P(X=2)$? \mrk{1}
+    \item What is the most likely value of X (mode)? \mrk{1}
+    \item What is $\sum_{i=0}^6 P(X = i)$? \mrk{1}
+\end{enumerate}
 
 \subsection{}
 
-    Use the least squares method to provide a formula for the line of best fit $y = a + bx$ through the data below. The formula for the least squares method is reproduced below to help you.
+Let Y be a continuous variable uniformly distributed between 0 and 1.
+
+\begin{enumerate}
+    \item What is $P(Y = 0.1)$? \mrk{1}
+    \item What is $P(Y > 0.6)$? \mrk{1}
+\end{enumerate}
+
+\subsection{}
+
+A variable Z is defined by a normal distribution where $\mu = 0$ and $\sigma = 1$.
+
+\begin{enumerate}
+    \item What is the median value of Z? \mrk{1}
+    \item What is $P(-2 < Z < 2)$, approximately? \mrk{1}
+    \item What is the (approximate) probability of generating a value of Z that is greater than 2? \mrk{1}
+\end{enumerate}
+
+\iffalse
+
+
+\subsection{}
+
+    Use the least squares method to provide a formula for the line of best fit $y = a + bx$ through the data below. The formula for the least squares method is reproduced below to help you. \mrk{1}
 
     \begin{multicols}{2}
     $$ b = \frac{\sum{(x_i - \overline{x})(y_i - \overline{y})}}{\sum{(x_i - \overline{x})^2}} $$
@@ -918,32 +978,6 @@ Use equational reasoning to prove the following. Reference the laws of set theor
     \end{center}
 \end{multicols}
 
-\subsection{}
-
-The binomial distribution is given by 
-
-\begin{center}
-    $P(X = x) = ^nC_x.p^x.(1-p)^{(n-x)}$
-\end{center}
-
-Let X be a binomially distributed variable, with $n=6$ and $p=0.2$
-
-\begin{enumerate}
-    \item What is $P(X=2)$?
-    \item What is the most likely value of X?
-    \item What is $\sum_{i=1}^n P(X = i)$?
-\end{enumerate}
-
-\subsection{}
-
-Let Y be a continuous variable uniformly distributed between 0 and 1.
-
-\begin{enumerate}
-    \item What is $P(Y = 0.5)$?
-    \item What is $P(Y > 0.5)$?
-\end{enumerate}
-
-
 \clearpage
 \section{Inferrential Statistics}
 
@@ -953,13 +987,13 @@ Let Y be a continuous variable uniformly distributed between 0 and 1.
     
     \begin{enumerate}
         \item What is my dependant variable?
-        \item What is my independant variable?
+        \item What is my independent variable?
         \item What is my sample?
     \end{enumerate}
 
 \subsection{}
 
-When I run the above experiment I test each of my hypotheses at $\alpha = 0.05$. Assume the probabilities of getting a type 1 errors are independant. What is the probability of a Type 1 error if I perform:
+When I run the above experiment I test each of my hypotheses at $\alpha = 0.05$. Assume the probabilities of getting a type 1 errors are independent. What is the probability of a Type 1 error if I perform:
 
 \begin{enumerate}
     \item 1 hypothesis test
@@ -1151,5 +1185,7 @@ $$ \{ a_n \}_{n=1}^{\infty} $$
     \item $ \{ k + \frac{n}{2} \}_{n=k}^{k+4} $
 \end{enumerate}
 \fi
-
+\fi
+\clearpage
+Total marks: \arabic{marks}
 \end{document}
