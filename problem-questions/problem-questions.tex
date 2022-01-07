@@ -18,18 +18,18 @@
 \newcounter{realpage} 
 \setcounter{realpage}{1}
 
-%\newcommand\mrk[1]{}
-\newcommand\mrk[1]{{\hfill\color{blue}\small[{#1}]}\addtocounter{pmarks}{#1}\addtocounter{marks}{#1}}
+\newcommand\mrk[1]{}
+%\newcommand\mrk[1]{{\hfill\color{blue}\small[{#1}]}\addtocounter{pmarks}{#1}\addtocounter{marks}{#1}}
 
 \usepackage{fancyhdr}
 
 \pagestyle{fancy}
 \fancyhf{}
-%\rhead{Problem Questions}
-\rhead{Assessment Questions p.\arabic{realpage}/10 \addtocounter{realpage}{1}}
+\rhead{Problem Questions}
+%\rhead{Assessment Questions p.\arabic{realpage}/10 \addtocounter{realpage}{1}}
 \lhead{Week \thepage}
 \rfoot{Mathematics and Problem Solving 2021-22}
-\lfoot{{\color{blue}Total marks for this section: \arabic{pmarks}}\setcounter{pmarks}{0}}
+%\lfoot{{\color{blue}Total marks for this section: \arabic{pmarks}}\setcounter{pmarks}{0}}
 
 \begin{document}
 
@@ -781,7 +781,7 @@ Use equational reasoning to prove the following. Reference the laws of set theor
 
 \subsection{}
 
-    Let $P(A) = 0.25$, $P(B) = 0.5$, and $P(C) = 0.75$. You know that events B and C are independent, and that $P(A \mid B ) = 0.7 $. Calculate the following
+    Let $P(A) = 0.25$, $P(B) = 0.5$, and $P(C) = 0.75$. You know that events B and C are independent, and that $P(A \mid B ) = 0.1 $. Calculate the following
     
     \begin{multicols}{2}
         \begin{enumerate}
@@ -1186,6 +1186,6 @@ $$ \{ a_n \}_{n=1}^{\infty} $$
 \end{enumerate}
 \fi
 \fi
-\clearpage
-Total marks: \arabic{marks}
+%\clearpage
+%Total marks: \arabic{marks}
 \end{document}
