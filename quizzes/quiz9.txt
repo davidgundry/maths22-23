@@ -1,0 +1,45 @@
+
+9.1 Consider the following graph.
+       
+1. Is it directed, connected, and/or cyclic? {1:MULTIRESPONSE_H:directed~=connected~=cyclic}
+2. Give the min. and max. degree of the graph. Min:{1:NUMERICAL:=1:0} Max:{1:NUMERICAL:=3:0}
+3. What is the degree of node 4? {1:NUMERICAL:=3:0}
+4. List the loops in this graph as a set    {1:SHORTANSWER:={\}}
+5. Write a simple cycle in this graph as a list    {1:SHORTANSWER:={1,2,3,4,1\}}
+6. Write a simple path that connects every node in this graph as a list   {1:SHORTANSWER:={1,2,3,4,6,5,7,8\}}
+7. Write a shortest path connecting every even-numbered node as a list  {1:SHORTANSWER:={2,1,4,6,7,8\}}
+    
+
+9.2 A graph G is defined as \(G = \{V, E\}\), where \(V = \{ a, b, c \}\), and \(E = V \times V\)
+    
+1. Is it directed, connected, and/or cyclic?  {1:MULTIRESPONSE_H:=directed~=connected~=cyclic}
+2. How many nodes and edges does it contain?  Nodes:{1:NUMERICAL:=3:0} Edges:{1:NUMERICAL:=9:0}
+3. Give the min. and max. degree of the graph. Min:{1:NUMERICAL:=3:0} Max:{1:NUMERICAL:=3:0}
+    
+
+9.3 A formal string-rewriting system is defined with the rules below. The starting string is \(a\)
+    
+* \( a \rightsquigarrow aba \)
+* \(bab \rightsquigarrow b\)
+     
+1. Draw a graph of the first 5 unique strings that can be constructed in this system, where edges represent applications of one of the grammatical rules 
+    
+
+9.4 Below is a database for a Twitter-like social network
+
+    \toprule
+    Username & Following & Posts \\
+    \midrule
+    Alice & \{Bob, Eve\} & 24 \\
+    Bob & \{Alice, Eve\} & 3  \\
+    Eve & \{Alice, Mary\} & 124 \\
+    Mary & \{Eve\} & 10 \\
+    \bottomrule
+        
+We can produce a graph of this social network \( G = ( V, E)\) where \( V = \{ x : \text{Username} \mid \text{true} \}\), and E is a set of directed edges (a, b) where A `follows' B.
+    
+1. Give an extensional definition of E 
+2. Give an intensional definition of E using set comprehension 
+3. List of followers: Give a set comprehension that returns a tuple (a, b), where a is a username and b is a person following that user 
+4. Follow recommendation: Give a set comprehension that returns a tuple (a, b), where \(a\) is a username and \(b\) is a username of someone \(a\) might like to follow (\(a\) might `like to follow' \(b\) if and only if \(b\) is followed by someone \(a\) follows, \(a\) does not already follow them, and \(a\) and \(b\) are not the same person). 
+    

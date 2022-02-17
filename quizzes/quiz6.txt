@@ -1,0 +1,56 @@
+
+6.1 Define the following sets by extension
+
+1. The set of natural numbers between 6 and 11 (not inclusive) {1:SHORTANSWER:={7,8,9,10\}}
+2. The set of letters in the phrase ``formal systems, logic, and semantics''{1:SHORTANSWER:={f,o,r,m,a,l,s,y,t,e,l,g,i,c,n,d\}}
+3. The set of sets with exactly one subset{1:SHORTANSWER:={\}}
+
+6.2 State whether each of the following is a singleton, the empty set, or neither of these
+
+1. The set of Real numbers, less the Natural numbers {1:MULTICHOICE_H:singleton~emptyset~=neither}
+2. The set of even primes {1:MULTICHOICE_H:=singleton~emptyset~neither}
+3. The set of digits used in binary {1:MULTICHOICE_H:singleton~emptyset~=neither}
+4. The set black hearts in a standard deck of cards {1:MULTICHOICE_H:singleton~=emptyset~neither}
+5. A set that has no proper subsets {1:MULTICHOICE_H:singleton~=emptyset~neither}
+6. A set with exactly two subsets {1:MULTICHOICE_H:=singleton~emptyset~neither}
+
+6.3 Give the extension of the following sets
+
+1. \(\{ a, b, c \} \cap \{ c, d \} \) {1:SHORTANSWER:={c\}}
+2. \(\{ a, c \} \cup \{ b, c, d \} \) {1:SHORTANSWER:={a,b,c,d\}}
+3. \(\{ a, b, c \} \setminus \{ b, c, d \} \) {1:SHORTANSWER:={a\}}
+4. \(\{ a \} \cap ( \{ b \} \cup \{a, b, c\} ) \) {1:SHORTANSWER:={a\}}
+5. \( (\{ c \} \cup \{ b \} \cup \{a\}) \cap ( \{b, c, a\} \cup \emptyset ) \) {1:SHORTANSWER:={a,b,c\}}
+
+6.4 For the given sets, state whether the following propositions are true or false
+
+\( A = \{ a, b, c \} \)
+
+\( B = \{ a, d \} \)
+
+\( C = \{ c \} \)
+
+1. \( A \supset C \) {1:MULTICHOICE_H:=true~false}
+2. \( (C \cup A) \subseteq B \)  {1:MULTICHOICE_H:true~=false}
+3. \( c \in ( A \cap B ) \)  {1:MULTICHOICE_H:=true~false}
+4. \( a \not \in ( A \setminus B ) \) {1:MULTICHOICE_H:=true~false}
+5. \((B \cap \{d, a\} ) \supseteq B \) {1:MULTICHOICE_H:=true~false}
+
+6.5 For the given sets, give the extension of the following sets
+
+\( A = \{ a, b, c \} \)
+
+\( B = \{ a, d \} \)
+
+\( C = \{ c \} \)
+
+1. \( (A \setminus B) \cap C\) {1:SHORTANSWER:={c\}}
+2. \( ( B \cap C ) \cup A \) {1:SHORTANSWER:={a,b,c\}}
+3. \( C \cup (A \setminus (B \cap A)) \) {1:SHORTANSWER:={b,c\}}
+
+
+6.6 Use equational reasoning to prove the following. Reference the laws of set theory and propositional logic introduced in the lectures and on the handout.
+
+1. \(S \subseteq (T \cup (S \cap S)) \)
+2. \( (S = T) \wedge (T \not\subseteq S) \Longleftrightarrow \text{false} \)
+3. \( \emptyset \not\subset ((S \cap S) \setminus (S \setminus \emptyset)) \)
