@@ -1,0 +1,119 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{multicol}
+
+\usepackage{tikz}
+\usetikzlibrary{graphs,graphs.standard}
+\usepackage{fancyhdr}
+\usepackage{url}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Page \thepage}
+\lhead{Assessment Feedback}
+\rfoot{Mathematics and Problem Solving 2021-22}
+
+\begin{document}
+
+\section*{Preface} 
+
+Thank you to everyone who submitted their maths assessment. Overall performance this year was pretty good. Well done!
+
+I spotted some recurring mistakes in assessment submissions. First, I will give a few general peices of feedback. This doesn't apply to all students. Many of the submissions were excellent.
+
+\begin{itemize}
+\item Ensure you submit in the form described by the assessment brief. During moderation, we decided to mark those students who had not correctly submitted to the Assessment Submission Point, but next time you might not be so lucky. Similarly, when using Moodle, make sure a submission has been completed and not left as draft.
+
+\item The quality of presentation of attached images and PDFs was sometimes very poor. When submitting any peice of work, make sure your answers are clear and in the correct order. Please.
+
+\item Across the whole assessment the correct symbols were often not used. I understand the temptation to use symbols that look like the correct ones, but in the future try to take pride in how to present your work\footnote{My go-tos when I want logic synmbols in text are: \url{https://www.rapidtables.com/math/symbols/Set_Symbols.html} and \url{https://en.wikipedia.org/wiki/List_of_logic_symbols}. And you can search online for more if you need them}. I was lenient, but it still periodically cost students marks. 
+
+\item Please make sure you answer exactly the question that was asked, and all parts of it.
+\end{itemize}
+
+This was a first year module and one of your first assessments, so more leeway in presentation was granted. Modules in later years will be less lenient.
+
+I have enjoyed teaching you this year and I wish you all the best in the rest of your course.
+
+\begin{flushright}
+    David Gundry
+\end{flushright}
+
+\section{Formal Systems}
+
+\paragraph{1.3} The most common error on this question was misapplying one of the rules. Another error was not giving all the possible derivable strings. A string rewriting rule can be applied to any instance of a substring within the whole string.
+
+\paragraph{1.4} A common mistake here was not being careful of the symbols in the formal system, in particular brackets $($ and $)$. String rewriting systems are defined by strict rules. Deviations from these are not allowed. So even while $fot$ may look like $(fot)$, the latter is a valid string in the system (which can be rewritten as $t$), while the former is an invalid string.
+
+\section{Modular Arithmetic}
+
+\paragraph{2.2} A frequent error was to give an answer of 0 when the modular inverse was undefined. And as with the modular division questions in 2.1, some students gave answers with decimal places. Modular division (and the modular inverse) -- like all modular arithmetic -- works only with positive integers.
+
+\paragraph{2.7} A common error here was to give a value of $s = A^b$, resulting in a very large number. Significantly $A^b$ need not be the same as $B^a$, meaning that it cannot be a \emph{shared} secret. The modulus of this must be found ($A^b \mod p$).
+
+\paragraph{2.8} The most common error here was not answering the question asked. It asked for a value of $k$, not for the decrypted word.
+
+\paragraph{2.9} This question was intended as a challenge. Those who decrypted it got 1 mark. Those who then answered the decrypted question got a second mark.
+
+\section{Number Systems}
+
+\paragraph{3.2, 3.3} Here it was important to remember that to represent a negative number in binary (in any of the ways covered in the course) requires you to know the number of bits you are working with. Thus it was important that you maintained the correct number of bits in your answers.
+
+\paragraph{3.4} The note about the numbers being stored as sign and magnitude was important. Most of the arithmetic we learned used the two's complement representation and that does not all apply here.
+
+
+\section{Sequences and Summation}
+
+\paragraph{4.3, 4.6} It was common to identify the sequence as increasing or decreasing, but then not also identify it as monotonic. If the sequence is increasing or decreasing (i.e. every element is greater (or less) than the element before), it has to be monotonic.
+
+\paragraph{4.7} As in the exercises in the lectures, this required you to get rid of the sigma notation. When working with sigma notation, it's important not to confuse the variables. A common mistake was to interpret $ \sum_{i=1}^{n} c $ as if it were the sum of the first $n$ natural numbers, mistaking $c$ for $i$. Another common error was to simplify the summation but for the variable $i$ to still be present. As $i$ is a variable bound by the summation (it's only meaningful within the scope of the summation), it doesn't make sense for it to `escape' once the summation is removed. Finally, parts 4 and 5 looked more complicated than they really were, so long as you are careful with variables and remember to work from the right. The last question required you to identify the formula for the sequence described before solving.
+
+\section{Propositional Logic}
+
+\paragraph{5.3} In marking this, I wanted to see two things: first, a useful truth table, meaning one that broke the proposition down into parts and was correct; and second something identifying whether the proposition was always true or giving a case where false. Many answers provided only one of these.
+
+\paragraph{5.4} This question asks for \emph{atomic} propositions. A proposition that contains negation is not atomic. Additionally, simply splitting the sentence is not sufficient. ``Then I am late for class'' is not a proposition; ``I am late for class'' is, as it can be either true or false.
+
+\paragraph{5.7} A very common error was to miss out applying the commutative law. Not all operators are commutative. We cannot simply assume that we can move parts of the string around without following the rules of our derivation. Another common error was to not format the proof as Equational Reasoning, as stated in the question. I was lenient in the exact formatting so long as it was clearly an Equational Reasoning approach. However, simply listing the rules used was insufficient. A crucial part of a proof is that it is a step by step argument. I need to see how the rule is applied to the string.
+
+\section{Set Theory}
+
+\paragraph{6.1, 6.3, 6.5} When defining sets, always remember to use the correct notation. Curly brackets $\{ \}$ are always used for sets. The items must be each separated by commas. Not taking the time to correctly format your answer means it would be marked wrong.
+
+\section{Set Theory 2}
+
+\paragraph{8.1} This question asks for the cardinality of the set, not the extension of the set. This is a good example of a common issue of answering what you assume the question says without reading the question carefully. Similarly, if the question asked only to state whether the cardinality of the sets was infinite, it would be written that way. 
+
+\paragraph{8.3, 8.4} Sets $\{ ... \}$ and tuples $( ... )$ have particular notation which should not be confused. 
+
+\paragraph{8.7} Set comprehensions should always have either a predicate or a term. Ensure the predicate is always a true-or-false statement, a proposition. For instance, $x/3$ is a number, not a proposition. The term, being what to return, would only be surrounded by brackets $( )$ if a tuple was to be returned. Precision of notation is all important. Finally, there is a difference between $\{a: A, b: B \bullet (a, b) \}$ and $\{a: A x B \bullet (a.1, a.2) \}$ when we are dealing with a database model. The former enumerates all possible combinations of any $A$ and any $B$, the latter enumerates only those pairs of $A$s and $B$s that exist in the database. 
+
+\section{Graph Theory}
+
+\paragraph{9.1} If the question asks for an answer in a particular form, such as as a set, then ensure you give it in that form. In this case, the answer was the empty set $\emptyset$. I did not mind how the lists were written, but it is important that a cycle, as defined in the lecture, starts and ends on the same node.
+
+\paragraph{9.2} Drawing the graph and then working from a diagram is much the easiest way to answer this question, in my opinion.
+
+\section{Probability}
+
+\paragraph{10.1} Here careful use of a probability tree would have helped avoid several problems, and have made it easier to work out. Ensure you represent the correct situation, part 2 asks for \emph{at least} 2 sixes, for example.
+
+\paragraph{10.5} This was an intentionally complicated, terminology-laiden description that tripped a lot of people up. Carefully drawing out the situation as a Venn diagram would make the answer plain, as it's hard to keep all of it in your head
+
+\section{Descriptive Statistics}
+
+\paragraph{12.3} Here the sample standard deviation is needed, as it is calcualted from a sample of scores.
+
+\paragraph{12.6} Some answers worked out the sum of numbers from 1 to 100. That would be correct if the time taken to sort an array was $n$, but the time taken was given as $n(n+1)/2$. 
+
+\paragraph{12.7} The easiest way to work these out is to apply the formula for a binomial distribution. That can give you the probability of getting a particular number of heads. You can work this out for a range of numbers to help you towards your answer for parts 2 and 3.
+
+\paragraph{12.8} The most difficult part of this question is the syntax. $P()$ is the probability function. $Y=0.1$ is a proposition that we are finding the probability of. So it is asking what is the probability of $Y$ being 0.1. From there you just need to know what a continuous uniformly distributed random variable is from the lecture on probability.
+
+\paragraph{12.9} Here you needed to know the properties of the normal distribution that had been introduced in the lecture and the notation commonly used (e.g. $\mu$ for mean, $\sigma$ for standard deviation). As the normal distribution is symmetric, you can reason that the median will be the same as the mean. 
+
+
+\end{document}
