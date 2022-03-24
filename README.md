@@ -2,11 +2,11 @@
 
 Course content for the Mathematics and Problem Solving module 2021-22 at York St John University. 
 
-`assessment` - Assessments, questions, and Moodle quizzes
-`feedback` - Feedback given to students
-`handouts` - Documents to hand out in class
-`marks` - Student mark summary and feedback (private)
-`slides` - Course slides
+* `assessment` - Assessments, questions, and Moodle quizzes
+* `feedback` - Feedback given to students
+* `handouts` - Documents to hand out in class
+* `marks` - Student mark summary and feedback (private)
+* `slides` - Course slides
 
 ## Date and Time
 
