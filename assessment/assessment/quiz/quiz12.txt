@@ -1,0 +1,52 @@
+12.1 For the following types of data, say whether they are nominal, ordinal, or numeric, and give the most appropriate measure of central tendancy to use to describe such data
+
+1. Duration of daily commute {3:MULTICHOICE_H:nominal~ordinal~=numeric} Measure of central tendancy: {3:SHORTANSWER:=mean}
+2. Frequency in Hz  {3:MULTICHOICE_H:nominal~ordinal~=numeric} {3:SHORTANSWER:=mean}
+3. DEFCON level (See https://en.wikipedia.org/wiki/DEFCON) {3:MULTICHOICE_H:nominal~=ordinal~numeric} {3:SHORTANSWER:=median}
+4. Brands of espresso maker  {3:MULTICHOICE_H:=nominal~ordinal~numeric} {3:SHORTANSWER:=mode}
+
+
+12.2 For the following data calculate the median and mode(s). Use Tukey's Fences with a value of \(k=1.5\) to exclude outliers before calculating the mean.
+
+1. 4, 2, 5, 2, 34, 2, 4  Median: {2:NUMERICAL:=4} Mode(s): {2:SHORTANSWER:=2} Mean (excluding outliers): {2:NUMERICAL:=3.1666:0.07}
+2. 1, 4, 6, 2, 4, 3, 1  Median: {2:NUMERICAL:=3} Mode(s): {2:SHORTANSWER:=1,4~=4,1~=1, 4~=1 and 4~=1 , 4} Mean (excluding outliers): {2:NUMERICAL:=3}
+
+
+12.3 The following data represents a sample of scores collected from two levels of a mobile game. For each, calculate the range, inter-quartile range, and an appropriate form of standard deviation.  
+
+1. 1, 9, 3, 9, 23, 5, 3, 6 Range: {2:NUMERICAL:=22} IQR: {2:NUMERICAL:=6} Standard Deviation: {2:NUMERICAL:=6.9269143821144:0.03}
+2. 5, 2, 14, 25, 14, 11, 5 Range: {2:NUMERICAL:=23} IQR: {2:NUMERICAL:=9} Standard Deviation: {2:NUMERICAL:=7.819389819088:0.02}
+
+
+12.4 What is the approximate correlation of the data shown? Pick the closest out of {-1, -0.5, 0, 0.5, 1} {6:MULTICHOICE_H:-1~=-0.5~0~0.5~1}
+
+[IMAGE]
+
+12.5 8 bytes of data are transmitted over a noisy channel. For every bit transmitted, the probability of the bit being flipped (a transmission error) is \(10^{-2}\). What is the chance that at least one error occours?  {6:NUMERICAL:=0.47440351247444:0.01}
+ 
+
+12.6 The time taken to sort an array using Insertion Sort is \(n(n+1)/2\), where n is the size of the array. You use Insertion Sort on 100 arrays which are uniformly distributed in length between 1 and 100 elements.
+
+1. What is the total time taken?  {6:NUMERICAL:=171700}
+2. What is the mean time per array?   {6:NUMERICAL:=1717}
+
+
+12.7 You flip an unfair coin 6 times. The probability of heads is \(0.2\). The number of heads is given by the variable X.
+
+1. What is \(P(X=2)\)?  {6:NUMERICAL:=0.24576000:0.01}
+2. What is the most likely value of X (mode)?  {6:NUMERICAL:=1}
+3. What is \(\sum_{i=0}^6 P(X = i)\)?  {6:NUMERICAL:=1}
+
+
+12.8 Let Y be a continuous variable uniformly distributed between 0 and 1.
+
+1. What is \(P(Y = 0.1)\)? {6:NUMERICAL:=0}
+2. What is \(P(Y > 0.6)\)? {6:NUMERICAL:=0.4}
+
+
+12.9 A variable Z is defined by a normal distribution where \(\mu = 0\) and \(\sigma = 1\).
+
+1. What is the median value of Z? {6:NUMERICAL:=0}
+2. What is \(P(-2 < Z < 2)\), approximately? {6:NUMERICAL:=0.95:0.01}
+3. What is the (approximate) probability of generating a value of Z that is greater than 2? {6:NUMERICAL:=0.025:0.005}
+

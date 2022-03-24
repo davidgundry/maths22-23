@@ -3,7 +3,7 @@
 1. \( \neg \neg \neg q \) {1:MULTICHOICE_H:=true~false}
 2. \( (p \wedge q) \vee p \) {1:MULTICHOICE_H:=true~false}
 3. \( (p \vee \neg q) \implies p \) {1:MULTICHOICE_H:=true~false}
-4. \( q \implies (p \Longleftrightarrow q) \) {1:MULTICHOICE_H:true~=false}
+4. \( q \implies (p \Longleftrightarrow q) \) {1:MULTICHOICE_H:=true~false}
 5. \( p \wedge q \Longleftrightarrow \neg p \vee q \) {1:MULTICHOICE_H:=true~false}
 
 5.2 Let \( p \) be a true proposition and \( q \) be any proposition. Which of the following are true, and which of the following are false? (others might be true or false)
@@ -12,7 +12,6 @@
 2. \( q \implies p \) {1:MULTICHOICE_H:=true~false~unknown}
 3. \( \neg q \implies p \) {1:MULTICHOICE_H:=true~false~unknown}
 4. \( \neg p \implies q \) {1:MULTICHOICE_H:=true~false~unknown}
-
 
 
 
@@ -27,7 +26,6 @@
 2. I am happy if and only if I am riding my bike
 
 
-
 5.5 For the following, state whether they are tautologies, contraditions, or contingiencies
 
 1. \( p \implies (\neg p \vee p) \) {1:MULTICHOICE_H:=tautology~contradition~continguincy}
@@ -40,7 +38,6 @@
 1. Implication distributes over conjunction $$ (p \implies (q \wedge r)) \Longleftrightarrow (p \implies q) \wedge (p \implies r) $$ {1:MULTICHOICE_H:=yes~no}
 2. Implication distributes over disjunction $$ (p \implies (q \vee r)) \Longleftrightarrow (p \implies q) \vee (p \implies r) $$ {1:MULTICHOICE_H:=yes~no}
 3. Implication distributes over implication $$ (p \implies (q \implies r)) \Leftrightarrow (p \implies q) \implies (p \implies r) $$ {1:MULTICHOICE_H:=yes~no}
-
 
 
 5.7 Prove the following by Equational Reasoning. Format your proof as in the lecture slides

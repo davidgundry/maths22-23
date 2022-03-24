@@ -2,12 +2,10 @@
 
 Course content for the Mathematics and Problem Solving module 2021-22 at York St John University. 
 
-`assessment` - Published assessment documents
+`assessment` - Assessments, questions, and Moodle quizzes
 `feedback` - Feedback given to students
 `handouts` - Documents to hand out in class
 `marks` - Student mark summary and feedback (private)
-`problem-questions` - Problem questions/assessment questions
-`quizzes` - Moodle quiz versions of some parts of the assessment, after the switch to Cloze qustions; there has been subsequent corrections on Moodle
 `slides` - Course slides
 
 ## Date and Time
@@ -35,3 +33,5 @@ Generate attendance code at https://yorkconnectlite-test.azurewebsites.net/
 ## Assessment
 
 Deadline 25 Jan (Week 14) 12:00 Noon
+
+Resit deadline 22 April 12:00 Noon

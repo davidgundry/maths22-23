@@ -1,0 +1,49 @@
+(Throughout these questions, if necessary, give answers to 3 decimal places)
+
+4.1 For each of the following, state whether the sequence is arithmetic or geometric, and give the next 3 values in the sequence
+
+1. \( 1, 7, 13  \) {5:MULTICHOICE:=arithmetic~geometric} {5:NUMERICAL:=19:0} {5:NUMERICAL:=25:0} {5:NUMERICAL:=31:0}
+2. \( 0.9, 0.6, 0.4 \) {5:MULTICHOICE:%0%arithmetic~=geometric} {5:NUMERICAL:=0.267:0.1} {5:NUMERICAL:=0.178:0.1} {5:NUMERICAL:=0.119:0.1}
+3. \( 2k, 6k, 18k \) {5:MULTICHOICE:%0%arithmetic~=geometric} {5:SHORTANSWER:=54k} {5:SHORTANSWER:=162k} {5:SHORTANSWER:=486k}
+
+4.2 Give the first 5 elements of the following sequences:
+
+(Enter -1  if the answer contains a division by 0)
+
+1. \( \{ \frac{n^2}{n-1} \}^\infty_{n=1} \) {4:NUMERICAL:=-1:0} {4:NUMERICAL:=4:0} {4:NUMERICAL:=4.5:0} {4:NUMERICAL:=5.33:0.1} {4:NUMERICAL:=6.25:0}
+2. \( \{ i^3 \}^\infty_{i=3} \) {4:NUMERICAL:=27:0} {4:NUMERICAL:=64:0} {4:NUMERICAL:=125:0} {4:NUMERICAL:=216:0} {4:NUMERICAL:=343:0}
+3. \(  a_n = a_{n-1} + 3 \) where \( a_1 = 22\) {4:NUMERICAL:=22:0} {4:NUMERICAL:=25:0} {4:NUMERICAL:=28:0} {4:NUMERICAL:=31:0} {4:NUMERICAL:=34:0}
+4. \( a_n = 14 \times 3^{n-1} \) {4:NUMERICAL:=14:0} {4:NUMERICAL:=42:0} {4:NUMERICAL:=126:0} {4:NUMERICAL:=378:0} {4:NUMERICAL:=1134:0}
+
+4.3 A geometric sequence has 10 terms and a common ratio of \( \frac{1}{10} \) and it's final term is \( {10^{-8}} \).
+
+1. Is this sequence increasing, decreasing, monotonic, and/or bounded? (List all that apply) {20:MULTIRESPONSE_S:increasing~=decreasing~=monotonic~=bounded}
+2. Is -10 a lower bound for this sequence? {20:MULTICHOICE_H:=yes~no}
+3. Is 1 an upper bound for this sequence? {20:MULTICHOICE_H:yes~=no}
+
+4.4 Solve the following summations
+
+1. \( \sum_{i=1}^{5} 2 \) {20:NUMERICAL:=10:0}
+2. \( \sum_{i=4}^{7} i \) {20:NUMERICAL:=22:0}
+3. \( \sum_{i=1}^{3} 2^i \) {20:NUMERICAL:=14:0}
+4. \( \sum A \) where \( A = \{ n^2 \}^{7}_{n=1} \) {20:NUMERICAL:=140:0}
+
+4.5 Solve the following products
+
+1.  \( \prod_{k=1}^{3} (2k + 1) \) {20:NUMERICAL:=105:0}
+2.  \( \prod_{k=7}^{17} 2 \) {20:NUMERICAL:=2048:0}
+3.  \( \prod A \) where \( A = \{ \frac{1}{k} \}^{4}_{k=1} \) {20:NUMERICAL:=0.042:0.01}
+
+4.6 Consider the sequence \(S = \{ \frac{n}{n+1} \}^\infty_{n=1} \)
+
+1.  Give a lower bound for this sequence that is also in this sequence. {20:NUMERICAL:=0.5:0}
+2.  What is a number that this sequence will approach, but never quite reach? {20:NUMERICAL:=1:0}
+3.  Is this sequence increasing, decreasing, monotonic, and/or bounded? (List all that apply) {20:MULTIRESPONSE_S:=increasing~decreasing~=monotonic~=bounded}
+
+4.7 Simplify the following summations
+
+1.  \( \sum_{i=1}^{n} c \)
+2.  \( \sum_{i=1}^{n} ( i + 2 ) \)
+3.  \( \sum_{i=1}^{n} ( i^2 + 3i ) \)
+4.  \( \sum_{i=1}^{n} \sum_{j=1}^{i} j \)
+5.  \( \sum_{i=1}^{n} A_i \) where \( A_n = A_{n-1} + \frac{1}{2} \( and \( A_1 = \frac{1}{2} \)
